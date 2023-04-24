@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(54, 54, 54);
+    margin: 0;
+}
+h3 {
+    font-family: 'Montagu Slab', serif;
+    font-size: 24px;
+    padding: 10px 0 0 10px;
+    margin: 0;
+    padding: 10px 0 0 10px;
+}
+a.trademark {
+    color: rgb(120, 255, 110);
+}
+a.trademark:hover {
+    color: rgb(73, 120, 239);
+}
+nav {
+    display: flex;
+    justify-content: end;
+    padding: 0 50px 30px 0;
+}
+ul.up, ul.down {
+    margin: 0;
+    list-style: none;
+}
+li.up {
+    padding: 0 45px 0 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    display: inline-block;
+}
+li.down {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    margin: 0;
+}
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(65, 249, 120);
+    text-decoration: overline;
+}
+header {background-color: #171717;}
+main {
+    background-color: #707070;
+    max-width: 1000px;
+    margin: auto;
+}
+footer {background-color: #171717;}
+div.headline {
+    background-color: #1c1c1c;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+div.autore {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 34px;
+}
+.autore {
+    color: rgb(255, 255, 255);
+    font-family: 'Righteous', sans-serif ;
+    font-size: 40px;
+    font-weight: 500;
+}
+a.autore {
+    text-decoration: none;
+}
