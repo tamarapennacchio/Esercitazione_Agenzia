@@ -1,78 +1,158 @@
 body {
-    background-color: rgb(54, 54, 54);
     margin: 0;
 }
-h3 {
-    font-family: 'Montagu Slab', serif;
-    font-size: 24px;
-    padding: 10px 0 0 10px;
-    margin: 0;
-    padding: 10px 0 0 10px;
-}
-a.trademark {
-    color: rgb(120, 255, 110);
-}
-a.trademark:hover {
-    color: rgb(73, 120, 239);
-}
+img {max-width: 100%;}
+.trademark {
+    display: flex;
+    justify-content: start;
+    max-height: 0;
+  }
+.marchio {
+    width: 6%;
+    padding: 89px 0 0 144px;
+  }
 nav {
+    background-color: #B2C47E;
     display: flex;
     justify-content: end;
-    padding: 0 50px 30px 0;
 }
-ul.up, ul.down {
+.navbar { /*navigation menù*/
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: end;
+    overflow: hidden;
+    background-color: #B2C47E;
+}
+.navbar a { /*navigation links*/
+    display: flex;
+justify-content: center;
+font-family: 'Libre Franklin', sans-serif;
+font-size: 14px;
+font-weight: 500;
+padding: 10px 12px;
+text-decoration: none;
+}
+.subnav { /*subnavigation menù*/
+float: right;
+overflow: hidden;
+}
+.subnav .subnavbtn { /*subnav button*/
+    border: none;
+    outline: none;
+    padding: 10px 12px;
+    background-color: inherit;
+    font-family: inherit;
     margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: #7EC489;
+  }
+  
+  /* Style the subnav content - positioned absolute */
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #7EC489;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  /* Style the subnav links */
+.subnav-content a {
+    color: #dbe3c3;
+    text-decoration: none;
+  }
+  
+  /* Add a grey background color on hover */
+.subnav-content a:hover {
+    background-color: #E0E3C3;
+    color: #000;
+}
+  /* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+    display: flex;
+    justify-content: end;
+  }
+ul.up, ul.down {
     list-style: none;
+    margin: 0;
+}
+ul.up {
+    padding: 21px 34px 21px 34px;
 }
 li.up {
-    padding: 0 45px 0 0;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 16px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 100%;
     display: inline-block;
+    padding: 0 50px 0 0;
 }
-li.down {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 16px;
+ul.down {
+    background-color: #B2C47E;
     display: flex;
     justify-content: center;
-    padding: 40px;
-    margin: 0;
+}
+li.down {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100%;
+    padding: 21px 233px 21px 233px;
 }
 a {
-    color: rgb(255, 255, 255);
+    color: #000;
     text-decoration: none;
 }
 a:hover {
-    color: rgb(65, 249, 120);
-    text-decoration: overline;
+    color: #DBE3C3;
 }
-header {background-color: #171717;}
-main {
-    background-color: #707070;
-    max-width: 1000px;
-    margin: auto;
+h1.headline {
+    color: #000;
+    font-family: 'Montagu Slab', serif;
+    font-size: 32px;
+    font-weight: 500;
+    padding: 377px 0 89px 0;
 }
-footer {background-color: #171717;}
-div.headline {
-    background-color: #1c1c1c;
-    color: aliceblue;
+.headline {
+    background-color: #D1E3C3;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 30px;
 }
-div.autore {
-    margin: auto;
+.content {
+    background-color: #fff;
     display: flex;
     justify-content: center;
-    padding: 34px;
+    padding: 700px 0 300px 0;
 }
-.autore {
-    color: rgb(255, 255, 255);
-    font-family: 'Righteous', sans-serif ;
-    font-size: 40px;
-    font-weight: 500;
+.respiro {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
 }
-a.autore {
+a.freccina {
+    color: black;
+    background: #ffffff;
+    font-display: center;
+    border-radius: 20px;
+    padding: 10px;
     text-decoration: none;
+    position: fixed;
+    bottom: 4px;
+    right: 17px;
+    z-index: 99px;
+    }
+  a.freccina:hover {
+    color: white;
+    background-color: #B2C47E;
+   }
+footer {
+    background-color:#B2C47E;
 }

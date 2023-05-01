@@ -1,9 +1,96 @@
 body {
-    background-color: #c55757;
-    max-width: 1000px;
-    margin: auto;
+  margin: 0;
 }
-h3 {
-    font-family: 'Inter', sans-serif;
-    background-color: #a1e088;
+img {max-width: 100%;}
+.trademark {
+  display: flex;
+  justify-content: start;
+  max-height: 0;
+}
+.marchio {
+  width: 6%;
+  padding: 89px 0 0 144px;
+}
+nav {
+  background-color: #B2C47E;
+  display: flex;
+  justify-content: end;
+}
+ul.up, ul.down {
+  list-style: none;
+  margin: 0;
+}
+ul.up {
+  padding: 21px 34px 21px 34px;
+}
+li.up {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+  display: inline-block;
+  padding: 0 50px 0 0;
+}
+ul.down {
+  background-color: #B2C47E;
+  display: flex;
+  justify-content: center;
+}
+li.down {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  padding: 21px 233px 21px 233px;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #DBE3C3;
+}
+h1.headline {
+  color: #000;
+  font-family: 'Montagu Slab', serif;
+  font-size: 32px;
+  font-weight: 500;
+  padding: 377px 0 89px 0;
+}
+.headline {
+  background-color: #DBE3C3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.content {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 700px 0 300px 0;
+}
+.respiro {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+}
+a.freccina {
+  color: black;
+  background: #ffffff;
+  font-display: center;
+  border-radius: 20px;
+  padding: 10px;
+  text-decoration: none;
+  position: fixed;
+  bottom: 4px;
+  right: 17px;
+  z-index: 99px;
+  }
+a.freccina:hover {
+  color: white;
+  background-color: #B2C47E;
+ }
+footer {
+  background-color:#B2C47E;
 }

@@ -1,0 +1,175 @@
+
+body {
+  background-color: #ffffff;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
+.trademark {
+  display: flex;
+  justify-content: start;
+  max-height: 0;
+}
+.marchio {
+  width: 6%;
+  padding: 89px 0 0 144px;
+}
+nav {
+  background-color: #B2C47E;
+  display: flex;
+  justify-content: end;
+}
+ul.up, ul.down {
+  list-style: none;
+  margin: 0;
+}
+ul.up {
+  padding: 21px 34px 21px 34px;
+}
+li.up {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+  display: inline-block;
+  padding: 0 50px 0 0;
+}
+ul.down {
+  background-color: #B2C47E;
+  display: flex;
+  justify-content: center;
+}
+li.down {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  padding: 21px 233px 21px 233px;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #B2C47E;
+}
+a:hover {
+  color: #D1E3C3;
+}
+.frame {
+  background-color: #D1E3C3;
+  text-align: center;
+}
+.contact {
+  height: 610px;
+}
+.headline {
+  font-family: 'Montagu Slab', serif;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 80px;
+  padding: 233px 0 0 0;
+  margin: 0;
+}
+.subtitle {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 32px;
+  font-weight: 200;
+  line-height: 40px;
+  padding: 21px 0 0 0;
+  margin: 0;
+}
+/*-----------------------------------------------------------------------------------------------------------------*/
+.recapiti {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 377px 233px 0 233px;
+}
+.viabold {
+  font-weight: 800;
+  margin: 13px;
+}
+.via, .mail, .tel {
+    font-family: 'Libre Franklin', sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 16px;
+  margin: 13px;
+}
+/*-----------------------------------------------------------------------------------------------------------------*/
+.box {
+  margin: 144px 180px 144px 180px;
+  }
+   /* Style inputs with type="text", select elements and textareas */
+   input[type=text], select, textarea {
+      font-family: 'Libre Franklin', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      width: 100%; /* Full width */
+      padding: 12px; 
+      border: 1px solid #000; 
+      box-sizing: border-box; 
+      margin-top: 6px; 
+      margin-bottom: 16px; 
+      resize: vertical;
+    }  
+    /* Style the submit button with a specific background color etc */
+    input[type=invia] {
+      background-color: #fff;
+      border:1px solid #000;
+      color: rgb(0, 0, 0);
+      padding: 8px 8px;
+      cursor: pointer;
+    }
+      input[type=invia]:hover {
+      background-color: #b2c47e;
+      color: #fff;
+    }
+    .prova {
+      height: 160px;
+    }
+    .nota {
+      font-size: 10px;
+    } 
+    .container {
+      background-color: #D1E3C3;
+      padding: 40px;
+      margin: 0 377px ;
+    } 
+/*-----------------------------------------------------------------------------------------------------------------*/
+ul.down {
+  background-color: #B2C47E;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+}
+li.down {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  padding: 21px 233px 21px 233px;
+}
+/*-----------------------------------------------------------------------------------------------------------------*/
+a.freccina {
+  color: black;
+  background: #ffffff;
+  font-display: center;
+  border-radius: 20px;
+  padding: 10px;
+  text-decoration: none;
+  position: fixed;
+  bottom: 4px;
+  right: 17px;
+  z-index: 99px;
+  }
+a.freccina:hover {
+  color: white;
+  background-color: #B2C47E;
+ }
+ footer {
+  background-color:#B2C47E;
+}
