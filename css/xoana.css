@@ -1,22 +1,18 @@
 body {
     margin: 0;
 }
-.content {
-    display: flex;
-    justify-content: center;
-    padding: 377px 89px 55px 89px;
+img {
+    max-width: 100%;
+    display: block;
 }
-h5 {
-    font-family: 'Libre Franklin', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-}
-img {max-width: 100%;}
 .trademark {
     display: flex;
     justify-content: start;
     max-height: 0;
   }
+header {
+    background-color: #D1E3C3;
+} 
 .marchio {
     width: 6%;
     padding: 89px 0 0 144px;
@@ -26,6 +22,64 @@ nav {
     display: flex;
     justify-content: end;
 }
+.navbar { /*navigation menù*/
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: end;
+    overflow: hidden;
+    background-color: #B2C47E;
+}
+.navbar a { /*navigation links*/
+    display: flex;
+justify-content: center;
+font-family: 'Libre Franklin', sans-serif;
+font-size: 14px;
+font-weight: 500;
+padding: 10px 12px;
+text-decoration: none;
+}
+.subnav { /*subnavigation menù*/
+float: right;
+overflow: hidden;
+}
+.subnav .subnavbtn { /*subnav button*/
+    border: none;
+    outline: none;
+    padding: 10px 12px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: #7EC489;
+  }  
+  /* Style the subnav content - positioned absolute */
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #7EC489;
+    width: 100%;
+    z-index: 1;
+  }  
+  /* Style the subnav links */
+.subnav-content a {
+    color: #dbe3c3;
+    text-decoration: none;
+  }  
+  /* Add a grey background color on hover */
+.subnav-content a:hover {
+    background-color: #E0E3C3;
+    color: #000;
+}
+  /* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+    display: flex;
+    justify-content: end;
+  }
 ul.up, ul.down {
     list-style: none;
     margin: 0;
@@ -58,20 +112,34 @@ a {
     text-decoration: none;
 }
 a:hover {
-    color: #D1E3C3;
+    color: #DBE3C3;
 }
 h1.headline {
     color: #000;
     font-family: 'Montagu Slab', serif;
-    font-size: 32px;
-    font-weight: 500;
-    padding: 377px 0 89px 0;
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0;
 }
 .headline {
-    background-color: #D1E3C3;
-    color: aliceblue;
     display: flex;
-    align-items: center;
+    justify-content: start;
+    margin: 144px 0 0 144px;
+}
+.herobox {
+    background-color: #D1E3C3;
+    width: 100%;
+    height: 233px;
+}
+.content {
+    display: flex;
     justify-content: center;
-    padding: 30px;
+    margin: 0;
+    padding: 377px 55px;
+    max-width: 450px;
+}
+h5 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
 }

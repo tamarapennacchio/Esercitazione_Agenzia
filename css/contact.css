@@ -5,6 +5,7 @@ body {
 }
 img {
   max-width: 100%;
+  display: block;
 }
 .trademark {
   display: flex;
@@ -162,8 +163,8 @@ a.freccina {
   padding: 10px;
   text-decoration: none;
   position: fixed;
-  bottom: 4px;
-  right: 17px;
+  bottom: 8px;
+  right: 15px;
   z-index: 99px;
   }
 a.freccina:hover {
