@@ -119,6 +119,10 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+.heropic:hover {
+    opacity: 85%;
 }
 .mainpic img {
     width: 610px;
