@@ -1,5 +1,12 @@
+::-moz-selection { /* Code for Firefox */
+  background: #7EC489;
+}
+::selection {
+  background: #7EC489;
+}
 body {
   margin: 0;
+  scroll-behavior: smooth;
 }
 img {
   max-width: 100%;
@@ -92,7 +99,7 @@ a.freccina {
   }
 a.freccina:hover {
   color: white;
-  background-color: #B2C47E;
+  background-color: #7EC489;
  }
 footer {
   background-color:#B2C47E;
