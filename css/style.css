@@ -95,20 +95,20 @@ ul.down {
     justify-content: center;
 }
 li.down {
-    font-family: 'Libre Franklin', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 100%;
-    padding: 21px 233px 21px 233px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  padding: 21px 233px 21px 233px;
 }
 a {
-    color: #000;
-    text-decoration: none;
+  color: #000;
+  text-decoration: none;
 }
 a:hover {
-    color: #DBE3C3;
+  color: #DBE3C3;
 }
-/*-------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------*/
 .heropic {
     display: flex;
     align-items: center;
@@ -124,7 +124,7 @@ a:hover {
     object-fit: cover;
     object-position: 0 100%;
 }
-/*--------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------*/
 h1.headline {
     color: #000;
     font-family: 'Montagu Slab', serif;
