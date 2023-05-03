@@ -94,7 +94,7 @@ a {
 a:hover {
     color: #DBE3C3;
 }
-h1.headline {
+h2.headline {
   color: #000;
   font-family: 'Montagu Slab', serif;
   font-size: 40px;
@@ -103,7 +103,52 @@ h1.headline {
   margin: 620px 0 0 987px;
   position: absolute;
   z-index: 1;
+}.sitointernet {
+  display: flex;
+  justify-content: start;
+  }
+  p.headline {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 48px;
+  margin: 705px 0 0 987px;
+  position: absolute;
+  z-index: 1;
+  }
+.sito:hover {
+  color: #000;
 }
+:root {
+    --link-color: #000;
+}
+.sito {
+    position: relative;
+    color: var(--link-color);
+    display: inline-block;
+}
+.sito:after {
+    position: absolute;
+    left: 0px;
+    background-color: var(--link-color);
+    content: '';
+    display: block;
+    height: 5px;
+    transition: width .7s;
+    width: 0;
+}
+.sito:hover:after {
+    width: 100%;
+}
+  p.headline {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 48px;
+  margin: 705px 0 0 987px;
+  position: absolute;
+  z-index: 1;
+  }
 .headline {
   width: 200px;
   display: flex;
@@ -114,7 +159,7 @@ h1.headline {
     background-image: url("../pics/tim/6.png");
     background-size:auto;
     background-position: -25px 48.5%;
-    opacity: 28%;
+    opacity: 75%;
 }
 /*-------------------------------------------------- M A I N -----------------------------------------------------*/
 .main {
