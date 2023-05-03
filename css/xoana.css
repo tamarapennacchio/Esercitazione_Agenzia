@@ -108,8 +108,8 @@ h1.headline {
 .herobox {
     height: 893px;
     background-image: url("../pics/xoana/7.png");
-    background-size: cover;
-    background-position: 90px -0.05%;
+    background-size: auto;
+    background-position: 0 28.8%;
     opacity: 43%;
 }
 .content {
