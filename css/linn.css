@@ -32,26 +32,31 @@ nav {
     background-color: #B2C47E;
 }
 .navbar a { /*navigation links*/
-    display: flex;
-justify-content: center;
-font-family: 'Libre Franklin', sans-serif;
-font-size: 14px;
-font-weight: 500;
-padding: 10px 12px;
-text-decoration: none;
-}
-.subnav { /*subnavigation menù*/
-float: right;
-overflow: hidden;
-}
-.subnav .subnavbtn { /*subnav button*/
+    display: grid;
+    justify-content: center;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 21px 34px;
+    text-decoration: none;
+  }
+  .subnav { /*subnavigation menù*/
+    float: right;
+    overflow: hidden;
+  }
+  .subnavbtn {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .subnav .subnavbtn { /*subnav button*/
     border: none;
     outline: none;
-    padding: 10px 12px;
+    padding: 21px 34px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
-}
+  }
 /* Add a red background color to navigation links on hover */
 .navbar a:hover, .subnav:hover .subnavbtn {
     background-color: #7EC489;
@@ -64,12 +69,12 @@ overflow: hidden;
     background-color: #7EC489;
     width: 100%;
     z-index: 1;
-  }  
+}  
   /* Style the subnav links */
 .subnav-content a {
     color: #dbe3c3;
     text-decoration: none;
-  }  
+}  
   /* Add a grey background color on hover */
 .subnav-content a:hover {
     background-color: #E0E3C3;
@@ -79,33 +84,6 @@ overflow: hidden;
 .subnav:hover .subnav-content {
     display: flex;
     justify-content: end;
-  }
-ul.up, ul.down {
-    list-style: none;
-    margin: 0;
-}
-ul.up {
-    padding: 21px 34px 21px 34px;
-}
-li.up {
-    font-family: 'Libre Franklin', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 100%;
-    display: inline-block;
-    padding: 0 50px 0 0;
-}
-ul.down {
-    background-color: #B2C47E;
-    display: flex;
-    justify-content: center;
-}
-li.down {
-    font-family: 'Libre Franklin', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 100%;
-    padding: 21px 233px 21px 233px;
 }
 a {
     color: #000;
@@ -145,4 +123,20 @@ h5 {
 }
 footer {
     background-color:#B2C47E;
+}
+ul.down {
+    list-style: none;
+    margin: 0;
+}
+ul.down {
+    background-color: #B2C47E;
+    display: flex;
+    justify-content: center;
+}
+li.down {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100%;
+    padding: 21px 233px 21px 233px;
 }
