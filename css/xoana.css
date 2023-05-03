@@ -9,10 +9,9 @@ img {
     display: flex;
     justify-content: start;
     max-height: 0;
-  }
-header {
-    background-color: #D1E3C3;
-} 
+    position: absolute;
+    z-index: 1;
+}
 .marchio {
     width: 6%;
     padding: 89px 0 0 144px;
@@ -93,6 +92,7 @@ a {
 a:hover {
   color: #DBE3C3;
 }
+/*-----------------------------------------------------------------------------------------------------------------*/
 h1.headline {
   color: #000;
   font-family: 'Montagu Slab', serif;
@@ -101,14 +101,16 @@ h1.headline {
   margin: 0;
 }
 .headline {
-    display: flex;
-    justify-content: start;
-    margin: 144px 0 0 144px;
+   display: flex;
+   justify-content: start;
+   margin: 144px 0 0 144px;
 }
 .herobox {
-    background-color: #D1E3C3;
-    width: 100%;
-    height: 233px;
+    height: 893px;
+    background-image: url("../pics/xoana/7.png");
+    background-size: cover;
+    background-position: 90px -0.05%;
+    opacity: 43%;
 }
 .content {
     display: flex;

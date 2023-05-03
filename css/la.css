@@ -9,10 +9,9 @@ img {
     display: flex;
     justify-content: start;
     max-height: 0;
+    position: absolute;
+    z-index: 1;
   }
-header {
-    background-color: #D1E3C3;
-} 
 .marchio {
     width: 6%;
     padding: 89px 0 0 144px;
@@ -105,9 +104,11 @@ h1.headline {
     margin: 144px 0 0 144px;
 }
 .herobox {
-    background-color: #D1E3C3;
-    width: 100%;
-    height: 233px;
+    height: 893px;
+    background-image: url("../pics/la/5.png");
+    background-size: auto;
+    background-position: 0 15%;
+    opacity: 45%;
 }
 .content {
     display: flex;
