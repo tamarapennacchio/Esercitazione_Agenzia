@@ -92,23 +92,26 @@ a:hover {
     color: #DBE3C3;
 }
 h1.headline {
-    color: #000;
-    font-family: 'Montagu Slab', serif;
-    font-size: 24px;
-    font-weight: 300;
-    margin: 0;
+  color: #000;
+  font-family: 'Montagu Slab', serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  margin: 620px 0 0 987px;
+  position: absolute;
+  z-index: 1;
 }
 .headline {
-    display: flex;
-    justify-content: start;
-    margin: 144px 0 0 144px;
+  width: 300px;
+  display: flex;
+  justify-content: start;
 }
 .herobox {
     height: 893px;
     background-image: url("../pics/camilo/1.png");
     background-size: auto;
     background-position: 0 25.5%;
-    opacity: 35%;
+    opacity: 28%;
 }
 .content {
     display: flex;
