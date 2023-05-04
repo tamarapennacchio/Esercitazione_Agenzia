@@ -32,15 +32,18 @@ img {
     justify-content: end;
     overflow: hidden;
     background-color: #B2C47E;
+
 }
 .navbar a { /*navigation links*/
   display: grid;
-  justify-content: center;
+  grid-template-columns: 1fr;
+  justify-content: start;
   font-family: 'Libre Franklin', sans-serif;
   font-size: 14px;
   font-weight: 500;
   padding: 21px 34px;
   text-decoration: none;
+
 }
 .subnav { /*subnavigation menù*/
   float: right;
@@ -50,6 +53,7 @@ img {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 14px;
   font-weight: 500;
+
 }
 .subnav .subnavbtn { /*subnav button*/
   border: none;
@@ -58,24 +62,29 @@ img {
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+
 }
 /* Add a green background color to navigation links on hover */
 .navbar a:hover, .subnav:hover .subnavbtn {
   background-color: #7EC489;
+
 }  
   /* Style the subnav content - positioned absolute */
 .subnav-content {
    display: none;
    position: absolute;
    left: 0;
-   background-color: #7EC489;
+   background-color: #7ec489a7;
    width: 100%;
-   z-index: 1;
+   z-index: 2;
 }  
   /* Style the subnav links */
 .subnav-content a {
   color: #dbe3c3;
   text-decoration: none;
+  padding: 13px 21px;
+position: relative;
+  z-index: 1;
 }  
 .subnav-content a:hover {
   background-color: #E0E3C3;
