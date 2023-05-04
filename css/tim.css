@@ -7,7 +7,6 @@
 body {
     margin: 0;
     scroll-behavior: smooth;
-
 }
 img {
     max-width: 100%;
@@ -94,28 +93,11 @@ a {
 a:hover {
     color: #DBE3C3;
 }
-h2.headline {
-  color: #000;
-  font-family: 'Montagu Slab', serif;
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 48px;
-  margin: 620px 0 0 987px;
-  position: absolute;
-  z-index: 1;
-}.sitointernet {
+div.headline {
   display: flex;
   justify-content: start;
-  }
-  p.headline {
-  font-family: 'Libre Franklin', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 48px;
-  margin: 705px 0 0 987px;
-  position: absolute;
-  z-index: 1;
-  }
+  width: 200px;
+}
 .sito:hover {
   color: #000;
 }
@@ -136,23 +118,10 @@ h2.headline {
     height: 5px;
     transition: width .7s;
     width: 0;
+    margin: 5px 0 0 0;
 }
 .sito:hover:after {
     width: 100%;
-}
-  p.headline {
-  font-family: 'Libre Franklin', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 48px;
-  margin: 705px 0 0 987px;
-  position: absolute;
-  z-index: 1;
-  }
-.headline {
-  width: 200px;
-  display: flex;
-  justify-content: start;
 }
 .herobox {
     height: 893px;
@@ -161,8 +130,27 @@ h2.headline {
     background-position: -25px 48.5%;
     opacity: 75%;
 }
+/*--------------------------------------------- H E A D L I N E --------------------------------------------------*/
+.autore {
+  display: flex;
+  justify-content: end;
+  padding: 610px 0 0 987px;
+  position: absolute;
+  z-index: 1;
+}
+h2.name {
+  color: #000;
+  font-family: 'Montagu Slab', serif;
+  font-size: 40px;
+  font-weight: 500;
+}
+p.web {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
 /*-------------------------------------------------- M A I N -----------------------------------------------------*/
-.main {
+.illustrazioni {
   display: grid;
   flex-direction: column;
   margin: 144px 0 144px 377px;
@@ -208,6 +196,7 @@ a.freccina {
     color: white;
     background-color: #ff1e1ec7;
    }
+    /*----------------------------------------------------------------------- F O O T E R --------------------------------------------------*/
 footer {
     background-color:#B2C47E;
 }

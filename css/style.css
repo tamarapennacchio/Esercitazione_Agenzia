@@ -7,6 +7,9 @@
 body {
     margin: 0;
     scroll-behavior: smooth;
+    overflow: scroll;
+    scrollbar-color: #e61919;
+    scrollbar-width:thin;    
 }
 img {
     max-width: 100%;
@@ -111,6 +114,12 @@ a:hover {
     object-position: 0 100%;
 }
 /*----------------------------------------------- H E A D L I N E   ----------------------------------------------------*/
+div.headline {
+  display: flex;
+  justify-content: start;
+  margin: 89px 0 0 144px;
+
+}
 h1.headline {
     color: #000;
     font-family: 'Montagu Slab', serif;
@@ -118,10 +127,11 @@ h1.headline {
     font-weight: 300;
     margin: 0;
 }
-.headline {
-    display: flex;
-    justify-content: start;
-    margin: 89px 0 0 144px;
+h4 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 13px 0 0 0;
 }
 /*----------------------------------------------- H E R O -------------------------------------------------------------*/
 .herobox {
@@ -144,7 +154,7 @@ h1.headline {
 }
 .karlotta {
     object-fit: none;
-    object-position: 48% 59%;
+    object-position: 80% 15%;
 }
 .xoana {
     object-fit: none;
@@ -171,7 +181,7 @@ h1.headline {
     object-position: 85% 22%;
     margin: 89px 0 0;
 }
-/*----------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
 a.freccina {
     color: black;
     background: #ffffff;
@@ -188,6 +198,7 @@ a.freccina {
     color: white;
     background-color: #ff1e1ec7;
    }
+    /*----------------------------------------------------------------------- F O O T E R --------------------------------------------------*/
 footer {
     background-color:#B2C47E;
 }
