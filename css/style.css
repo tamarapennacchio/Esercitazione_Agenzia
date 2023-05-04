@@ -37,7 +37,6 @@ header {
     justify-content: end;
     overflow:scroll;
     background-color: #B2C47E;
-
 }
 .navbar a { /*navigation links*/
   border: none;
@@ -49,7 +48,6 @@ header {
   font-weight: 500;
   padding: 21px 21px;
   text-decoration: none;
-
 }
 .subnav { /*subnavigation menù*/
   float: right;
@@ -59,7 +57,6 @@ header {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 14px;
   font-weight: 500;
-
 }
 .subnav .subnavbtn { /*subnav button*/
   border: none;
@@ -154,6 +151,16 @@ h4 {
     height: 233px;
 }
 /*------------------------------------------------ M A I N ------------------------------------------------------------*/
+a.flag:hover {
+  color:#000;
+  position: relative;
+}
+a.flag[data]:hover:after {
+  content: attr(data);
+  padding: 13px 89px;
+  top: 0;
+  background: #7EC489;
+}
 .main {
     display: grid;
     flex-direction: column;

@@ -134,8 +134,9 @@ a:hover {
 .herobox {
     height: 893px;
     background-image: url("../pics/camilo/1.png");
-    background-size: auto;
-    background-position: 0 25.5%;
+    background-size: cover;
+    background-position: 0 19.5%;
+    background-repeat: no-repeat;
     opacity: 28%;
 }
 /*--------------------------------------------- H E A D L I N E --------------------------------------------------*/
@@ -151,11 +152,14 @@ h2.name {
   font-family: 'Montagu Slab', serif;
   font-size: 40px;
   font-weight: 500;
+  max-width: 50px;
+  margin: 0;
 }
 p.web {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 14px;
   font-weight: 500;
+  margin: 0;
 }
 /*--------------------------------------------------- M A I N -----------------------------------------------------*/
 .illustrazioni {
@@ -181,6 +185,7 @@ h5 {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 14px;
     font-weight: 400;
+    line-height: 24px;
 }
 a.freccina {
     color: black;

@@ -24,6 +24,7 @@ img {
 }
 nav {
   background-color: #B2C47E;
+  border: 1.5px solid #000;
   display: flex;
   justify-content: end;
 }
@@ -45,7 +46,7 @@ li.up {
   font-weight: 500;
   line-height: 100%;
   display: inline-block;
-  padding: 0 55px 0 0;
+  padding: 0 34px 0 0;
 }
 ul.down {
   background-color: #B2C47E;
@@ -180,8 +181,10 @@ a.freccina {
   }
 a.freccina:hover {
   color: white;
-  background-color: #B2C47E;
+  background-color: #7EC489;
+  border: 1px solid #000;
  }
  footer {
+  border: 1.5px solid #000;
   background-color:#B2C47E;
 }

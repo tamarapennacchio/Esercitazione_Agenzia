@@ -135,8 +135,9 @@ a:hover {
 .herobox {
     height: 893px;
     background-image: url("../pics/xoana/7.png");
-    background-size: auto;
+    background-size: cover;
     background-position: 0 28.8%;
+    background-repeat: no-repeat;
     opacity: 38%;
 }
 /*-------------------------------------------------- H E A D L I N E -------------------------------------------------*/
@@ -152,11 +153,14 @@ h2.name {
   font-family: 'Montagu Slab', serif;
   font-size: 40px;
   font-weight: 500;
+  max-width: 50px;
+  margin: 0;
 }
 p.web {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 14px;
   font-weight: 500;
+  margin: 0;
 }
 /*------------------------------------------------------- M A I N ---------------------------------------------------*/
 .illustrazioni {
@@ -182,6 +186,7 @@ h5 {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 14px;
     font-weight: 400;
+    line-height: 24px;
 }
 a.freccina {
   color: black;
