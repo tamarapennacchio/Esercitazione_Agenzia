@@ -27,12 +27,17 @@ nav {
   display: flex;
   justify-content: end;
 }
+nav a:hover {
+  background-color: #7EC489;
+  color: #E0E3C3;
+  padding: 21px;
+}
 ul.up, ul.down {
   list-style: none;
   margin: 0;
 }
 ul.up {
-  padding: 21px 34px 21px 34px;
+  padding: 21px 21px;
 }
 li.up {
   font-family: 'Libre Franklin', sans-serif;
@@ -40,7 +45,7 @@ li.up {
   font-weight: 500;
   line-height: 100%;
   display: inline-block;
-  padding: 0 50px 0 0;
+  padding: 0 55px 0 0;
 }
 ul.down {
   background-color: #B2C47E;

@@ -26,12 +26,17 @@ nav {
   display: flex;
   justify-content: end;
 }
+nav a:hover {
+  background-color: #7EC489;
+  color: #E0E3C3;
+  padding: 21px;
+}
 ul.up, ul.down {
   list-style: none;
   margin: 0;
 }
 ul.up {
-  padding: 21px 34px 21px 34px;
+  padding: 21px 21px;
 }
 li.up {
   font-family: 'Libre Franklin', sans-serif;
@@ -60,30 +65,75 @@ a {
 a:hover {
   color: #DBE3C3;
 }
-h1.headline {
-  color: #000;
-  font-family: 'Montagu Slab', serif;
-  font-size: 32px;
-  font-weight: 500;
-  padding: 377px 0 89px 0;
-}
-.headline {
-  background-color: #DBE3C3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
-}
-.content {
-  background-color: #fff;
+.herobox {
   display: flex;
   justify-content: center;
-  padding: 700px 0 300px 0;
+  height: 610px;
+  background-image: url("../pics/c.png");
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
-.respiro {
+section.box {
+  width: 100%;
+  height: 233px;
+  background-color: #E0E3C3;
+  border: 1.5px solid #000;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  padding: 55px 0 0 233px;
+  position: absolute;
+  z-index: 1;
+}
+h3.about {
+  font-family: 'Montagu Slab', sans;
+  font-size: 24px;
+  font-weight: 400;
+  max-width: 650px;
+  line-height: 28.8px;
+  max-width: 800px;
+}
+section.squares {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 377px 0 0 89px;
+}
+.ppl {
+  display: flex;
+}
+.ppl1, .ppl2 {
+  border: 1.5px solid #000;
+  border-radius: 150px;
+  width: 233px;
+  height: 233px;
+  margin: 0 55px 0 0;
+}
+.subtitle {
+  margin: 0;
+  padding: 55px 0 0 0;
+}
+p.ppl {
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 50px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 33.6px;
+  margin: 0;
+  max-width: 800px;
+}
+section.bug {
+  display: flex;
+  justify-content: end;
+  margin: 0;
+  padding: 0 144px 55px 0;
+}
+img.pulce {
+  width: 233px;
+  height: 233px;
+  max-width: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 a.freccina {
   color: black;

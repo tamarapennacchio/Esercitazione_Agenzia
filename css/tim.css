@@ -25,23 +25,25 @@ img {
   }
   /*---------------------------------------------------------------------------------------------------------------*/
   .navbar { /*navigation menù*/
+    border: 1.5px solid #000;
     font-family: 'Libre Franklin', sans-serif;
     font-size: 14px;
     font-weight: 500;
     display: flex;
     justify-content: end;
-    overflow: hidden;
+    overflow:scroll;
     background-color: #B2C47E;
 
 }
 .navbar a { /*navigation links*/
+  border: none;
   display: grid;
   grid-template-columns: 1fr;
   justify-content: start;
   font-family: 'Libre Franklin', sans-serif;
   font-size: 14px;
   font-weight: 500;
-  padding: 21px 34px;
+  padding: 21px 21px;
   text-decoration: none;
 
 }
@@ -58,37 +60,38 @@ img {
 .subnav .subnavbtn { /*subnav button*/
   border: none;
   outline: none;
-  padding: 21px 34px;
+  padding: 21px 21px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
-
 }
 /* Add a green background color to navigation links on hover */
 .navbar a:hover, .subnav:hover .subnavbtn {
   background-color: #7EC489;
-
+  color:#E0E3C3;
 }  
   /* Style the subnav content - positioned absolute */
 .subnav-content {
+   background-color: #7ec489a7;
+   border: 1.5px solid #e0e3c3;
    display: none;
    position: absolute;
    left: 0;
-   background-color: #7ec489a7;
    width: 100%;
    z-index: 2;
 }  
   /* Style the subnav links */
 .subnav-content a {
-  color: #dbe3c3;
+  border: none;
+  color:#000;
   text-decoration: none;
-  padding: 13px 21px;
+  padding: 13px 55px;
   position: relative;
   z-index: 1;
 }  
 .subnav-content a:hover {
   background-color: #E0E3C3;
-  color: #000;
+  color: #7EC489;
   border-radius: 30px;
 }
   /* When you move the mouse over the subnav container, open the subnav content */
@@ -163,20 +166,14 @@ p.web {
 .illustrazioni {
   display: grid;
   flex-direction: column;
-  margin: 144px 0 144px 377px;
+  padding: 144px 0 144px 377px;
 }
 .contentpics img {
   width: 60%;
   margin: 0;
 }
-img.seconda {
-  margin: 233px 0;
-}
-img.terza {
-  margin: 233px 0;
-}
-img.quarta {
-  margin: 233px 0;
+img.prima, .seconda, .terza, .quarta {
+  padding: 144px 0;
 }
 .content {
     display: flex;
