@@ -196,8 +196,9 @@ a.freccina {
   z-index: 99px;
   }
 a.freccina:hover {
+  border: 1px solid #000;
   color: white;
-  background-color: #ff1e1ec7;
+  background-color: #7ec489;
  }
  /*----------------------------------------------------------------------- F O O T E R --------------------------------------------------*/
 footer {

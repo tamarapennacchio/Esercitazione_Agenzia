@@ -143,8 +143,9 @@ h1.headline {
 h4 {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 16px;
-  font-weight: 600;
-  margin: 13px 0 0 0;
+  font-weight: 400;
+  line-height: 25.6px;
+ margin: 8px 0 0 0;
 }
 /*----------------------------------------------- H E R O -------------------------------------------------------------*/
 .herobox {
@@ -208,8 +209,9 @@ a.freccina {
     z-index: 99px;
     }
   a.freccina:hover {
+    border: 1.5px solid #000;
     color: white;
-    background-color: #ff1e1ec7;
+    background-color: #7EC489;
    }
     /*----------------------------------------------------------------------- F O O T E R --------------------------------------------------*/
 footer {

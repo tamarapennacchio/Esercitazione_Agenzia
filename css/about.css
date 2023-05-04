@@ -97,7 +97,7 @@ h3.about {
 section.squares {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   padding: 377px 0 0 89px;
 }
 .ppl {
@@ -112,7 +112,7 @@ section.squares {
 }
 .subtitle {
   margin: 0;
-  padding: 55px 0 0 0;
+  padding: 55px 0 89px 0;
 }
 p.ppl {
   font-family: 'Libre Franklin', sans-serif;
@@ -124,16 +124,17 @@ p.ppl {
 }
 section.bug {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   margin: 0;
-  padding: 0 144px 55px 0;
+  padding: 0 55px 0 0;
+  position: absolute;
+  z-index: 1;
 }
 img.pulce {
-  width: 233px;
-  height: 233px;
+  width: 66px;
+  height: 66px;
   max-width: 100%;
   object-fit: cover;
-  z-index: -1;
 }
 a.freccina {
   color: black;
