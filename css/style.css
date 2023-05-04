@@ -152,14 +152,19 @@ h4 {
 }
 /*------------------------------------------------ M A I N ------------------------------------------------------------*/
 a.flag:hover {
-  color:#000;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color:#7EC489;
   position: relative;
 }
 a.flag[data]:hover:after {
+  background: #e0e3c3;
+  border: 1px solid #000;
   content: attr(data);
-  padding: 13px 89px;
+  padding: 8px 89px;
   top: 0;
-  background: #7EC489;
+  margin: 0 0 0 580px;
 }
 .main {
     display: grid;
