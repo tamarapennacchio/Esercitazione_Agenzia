@@ -24,7 +24,7 @@ img {
 }
 nav {
   background-color: #B2C47E;
-  border: 1.5px solid #000;
+  border-bottom: 1.5px solid #000;
   display: flex;
   justify-content: end;
 }
@@ -185,6 +185,18 @@ a.freccina:hover {
   border: 1px solid #000;
  }
  footer {
-  border: 1.5px solid #000;
   background-color:#B2C47E;
+  padding: 0;
+  border-top: 1.5px solid #000;
+  text-align: center;
+}
+ul.down {
+  list-style: none;
+  margin: 0;
+}
+li.down {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 21px 233px;
 }
