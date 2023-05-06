@@ -6,21 +6,26 @@
 }
 body {
   background-color: #ffffff;
-  margin: 0;
+  margin: 0 0;
   scroll-behavior: smooth;
 }
 img {
   max-width: 100%;
   display: block;
 }
+main {
+  max-width: 1000px;
+  margin: 0;
+}
 .trademark {
-  display: flex;
+  display: grid;
   justify-content: start;
-  max-height: 0;
+  position: absolute;
+  z-index: 1;
 }
 .marchio {
-  width: 6%;
-  padding: 89px 0 0 144px;
+  max-width: 6rem;
+  padding: 8em 0 0 8em;  
 }
 nav {
   background-color: #B2C47E;

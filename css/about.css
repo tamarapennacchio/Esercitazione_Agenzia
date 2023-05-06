@@ -5,22 +5,28 @@
   background: #7EC489;
 }
 body {
-  margin: 0;
+  margin: 0 0;
   scroll-behavior: smooth;
 }
 img {
   max-width: 100%;
   display: block;
 }
+main {
+  max-width: 1000px;
+  margin: 0;
+}
 .trademark {
-  display: flex;
+  display: grid;
   justify-content: start;
-  max-height: 0;
+  position: absolute;
+  z-index: 1;
 }
 .marchio {
-  width: 6%;
-  padding: 89px 0 0 144px;
+  max-width: 6rem;
+  padding: 8em 0 0 8em;  
 }
+/*------------------------------------------------ N A V / B A R ------------------------------------------------------------------------*/
 nav {
   background-color: #B2C47E;
   border-bottom: 1.5px solid #000;
@@ -65,52 +71,57 @@ a:hover {
   opacity: 40%;
 }
 section.box {
-  width: 100%;
-  height: 233px;
   background-color: #E0E3C3;
   border: 1.5px solid #000;
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  padding: 55px 0 0 233px;
-  position: absolute;
-  z-index: 1;
+  display: grid;
+  place-items: center;
+  padding: 7em;
+  max-height: 10rem;
 }
 h3.about {
+  max-width: 30rem;
   font-family: 'Montagu Slab', sans;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 500;
   max-width: 650px;
   line-height: 28.8px;
-  max-width: 800px;
+  margin: 0;
+  max-width: 45rem;
 }
 section.squares {
+  background-color: rgb(218, 252, 188);
+  padding: 4em;
+}
+.oblò {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 377px 0 0 89px;
+  gap: 4em;
+  max-width: 150rem;
 }
 .ppl {
-  display: flex;
+  display: grid;
+  place-items: center;
 }
 .ppl1, .ppl2 {
   border: 1.5px solid #000;
   border-radius: 150px;
-  width: 233px;
-  height: 233px;
-  margin: 0 55px 0 0;
+  max-width: 15em;
+  max-height: 15em;
+}
+.info {
+  display: grid;
+  place-items: center;
 }
 .subtitle {
   margin: 0;
-  padding: 55px 0 89px 0;
+  padding: 4em;
 }
 p.ppl {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 33.6px;
   margin: 0;
-  max-width: 540px;
+  max-width: 36rem;
 }
 section.bug {
   display: flex;

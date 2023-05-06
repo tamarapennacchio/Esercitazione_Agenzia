@@ -117,9 +117,6 @@ a:hover {
   display: grid;
   place-items: center;
   padding: 0 2em 2em 0;
-  /*display: flex;
-  align-items: center;
-  justify-content: center;*/
   cursor: pointer;
 }
 .mainpic img {
