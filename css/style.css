@@ -134,7 +134,7 @@ a:hover {
 div.headline {
   background-color: #e0e3c3;
   display: grid;
-  place-items: start;
+  place-items: center;
   padding: 5em;
   /*min-height: 144px;*/
 }
@@ -158,6 +158,23 @@ h4 {
     min-height: 144px;
 }*/
 /*------------------------------------------------ M A I N ------------------------------------------------------------------------------*/
+.contentpics img:hover {
+  opacity: 0.7;
+}
+.illustratore {
+  display: grid;
+  place-items: center;
+  padding: 1em;
+}
+p.main {
+  background-color: #E0E3C3;
+  border-radius: 30px;
+  padding: 0 1.5em;
+  font-family: 'Montagu Slab', serif;
+  font-size: 32px;
+  font-weight: 500;
+  margin: 0;
+}
 .karlotta {
   object-fit: none;
   object-position: 64% 21%;
@@ -168,7 +185,7 @@ h4 {
 }
 .tim {
   object-fit: none;
-  object-position: 63.2%;
+  object-position: 57.9% 53.5%;
 }
 .linn {
   object-fit: none;
@@ -180,7 +197,7 @@ h4 {
 }
 .la {
   object-fit: none;
-  object-position: 67% 22.5%;
+  object-position: 67% 22.3%;
 }
 a.flag:hover {
   font-family: 'Libre Franklin', sans-serif;
@@ -257,6 +274,7 @@ main, .card  {
   max-width: 1000px;
 }
 .contentpics img {margin: 0 0 5em 0;}
+
 .trademark {
   background-color: #dbe3c3b9;
   border-radius: 0 0 4px 0;
@@ -318,6 +336,7 @@ color:#E0E3C3;
 /* Style the subnav links */
 .subnav-content a {
   font-size: 13px;
+  font-weight: 600;
   border: none;
   color:#000000;
   text-decoration: none;
@@ -345,6 +364,21 @@ color:#E0E3C3;
   align-items: center;
   justify-content: center;*/
   cursor: pointer;
+}
+.illustratore {
+  display: grid;
+  place-items: start;
+  padding: 1em 1em 1em 0;
+}
+p.main {
+  background-color: #7EC489;
+  border-radius: 30px;
+  color:#000000;
+  padding: 0 2em;
+  font-family: 'Montagu Slab', serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
 }
 .mainpic img {
   object-fit: none;
@@ -395,7 +429,9 @@ a.freccina:hover {
   border: 1.5px solid #000;
   color: rgb(0, 0, 0);}
 }
-/*_______________________________________________________________ 2 ______________________________________________________________________*/
+/*_________________________________________________________________ 2 ___________________________________________________________________*/
+
+/*_______________________________________________________________ 3 ______________________________________________________________________*/
 @media (min-width: 40em) {
 .card {
   padding: 9em;
