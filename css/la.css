@@ -12,19 +12,25 @@ img {
     max-width: 100%;
     display: block;
 }
+main {
+  max-width: 1000px;
+  margin: 0;
+}
+.pics img {
+  max-width: 700px;
+}
 .trademark {
-    display: flex;
-    justify-content: start;
-    max-height: 0;
-    position: absolute;
-    z-index: 1;
-  }
+  display: grid;
+  justify-content: start;
+  position: absolute;
+  z-index: 1;
+}
 .marchio {
-    width: 6%;
-    padding: 89px 0 0 144px;
-  }
+  max-width: 6rem;
+  padding: 8em 0 0 8em;  
+}
   /*---------------------------------------------------------------------------------------------------------------*/
-  .navbar { /*navigation menù*/
+.navbar { /*navigation menù*/
     border-bottom: 1.5px solid #000;
     font-family: 'Libre Franklin', sans-serif;
     font-size: 14px;
@@ -131,16 +137,16 @@ a:hover {
 .sito:hover:after {
     width: 100%;
 }
-.herobox {
+/*.herobox {
     height: 893px;
     background-image: url("../pics/la/5.png");
     background-size: cover;
     background-position: 0 15%;
     background-repeat: no-repeat;
     opacity: 45%;
-}
+}*/
 /*--------------------------------------------- H E A D L I N E --------------------------------------------------*/
-.autore {
+/*.autore {
   display: flex;
   justify-content: end;
   padding: 610px 0 0 987px;
@@ -160,33 +166,44 @@ p.web {
   font-size: 14px;
   font-weight: 500;
   margin: 0;
-}
+}*/
 /*---------------------------------------------- M A I N ----------------------------------------------------------*/
-.illustrazioni {
+.about {
+  background-color: #dbe3c3;
   display: grid;
-  flex-direction: column;
-  padding: 144px 0 144px 377px;
-}
-.contentpics img {
-  width: 60%;
+  place-items: center;
+  padding: 3em;
   margin: 0;
 }
-img.prima, .seconda, .terza, .quarta {
-  padding: 144px 0;
+.text {
+  background-color: #fff;
+  padding: 4em;
+  max-width: 34rem;
 }
-.content {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 55px 0 0 144px;
-    max-width: 450px;
+h5.z {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
-h5 {
-    font-family: 'Libre Franklin', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
+/*-------------------------------------- M A I N ---------------------------------------------------*/
+.card {
+  display: grid;
+  place-items: center;
 }
+main, .card {
+  max-width: 1000em;
+}
+.pics {
+  display: grid;
+  place-items: center;
+}
+.pics img {
+  margin: 0;
+  max-width: 40rem;
+  padding: 5em;
+}
+/*-------------------------------- F R E C C I N A ---------------------------------------------------*/
 a.freccina {
     color: black;
     background: #ffffff;
