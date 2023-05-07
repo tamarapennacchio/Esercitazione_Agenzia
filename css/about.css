@@ -36,22 +36,18 @@ nav {
 nav a:hover {
   background-color: #7EC489;
   color: #E0E3C3;
-  padding: 21px;
-}
-ul.up, ul.down {
-  list-style: none;
-  margin: 0;
+  padding: 1rem 2rem;
 }
 ul.up {
-  padding: 21px 21px;
+  list-style: none;
+  margin: 0;
 }
 li.up {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 14px;
   font-weight: 500;
-  line-height: 100%;
   display: inline-block;
-  padding: 0 34px 0 0;
+  padding: 1rem 2rem;
 }
 a {
   color: #000;
@@ -60,36 +56,29 @@ a {
 a:hover {
   color: #DBE3C3;
 }
-.herobox {
-  display: flex;
-  justify-content: center;
-  height: 610px;
-  background-image: url("../pics/c.jpg");
-  background-size: cover;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  opacity: 40%;
+.photo img {
+  max-height: 30rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: left center;
+  opacity: 0.7;
 }
 section.box {
   background-color: #E0E3C3;
-  border: 1.5px solid #000;
+  border: none;
+  border-bottom: 1.5px solid #000000;
   display: grid;
   place-items: center;
   padding: 7em;
   max-height: 10rem;
 }
 h3.about {
-  max-width: 30rem;
   font-family: 'Montagu Slab', sans;
   font-size: 24px;
   font-weight: 500;
-  max-width: 650px;
   line-height: 28.8px;
   margin: 0;
   max-width: 45rem;
-}
-section.squares {
-  padding: 4em;
 }
 .oblò {
   display: flex;
@@ -99,6 +88,7 @@ section.squares {
 .ppl {
   display: grid;
   place-items: center;
+  padding: 3em 0 0 0;
 }
 .ppl1, .ppl2 {
   border: 1.5px solid #000;
@@ -111,6 +101,7 @@ section.squares {
   place-items: center;
 }
 .subtitle {
+  max-width: 35rem;
   margin: 0;
   padding: 4em;
 }
@@ -122,13 +113,19 @@ p.ppl {
   margin: 0;
   max-width: 36rem;
 }
-section.bug {
-  display: flex;
-  justify-content: center;
+.bug {
   margin: 0;
-  padding: 0 55px 0 0;
-  position: absolute;
+}
+.move {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gif {
+  position: fixed;
   z-index: 1;
+  border: 2px solid #000;
+  border-radius: 40px;
 }
 img.pulce {
   width: 55px;
@@ -139,25 +136,28 @@ img.pulce {
 a.freccina {
   color: black;
   background: #ffffff;
-  font-display: center;
   border-radius: 20px;
-  padding: 10px;
+  padding: 8px;
   text-decoration: none;
   position: fixed;
-  bottom: 8px;
-  right: 15px;
-  z-index: 99px;
+  bottom: 7px;
+  right: 25px;
   }
 a.freccina:hover {
-  color: white;
-  background-color: #7EC489;
-  border: 1px solid #000;
- }
+background-color: #fff;
+border: 1.5px solid #000;
+color: rgb(0, 0, 0);
+}
+ /*--------------------------------------------------------- F O O T E R -----------------------------------------------------------------*/
  footer {
   background-color:#B2C47E;
-  padding: 0;
   border-top: 1.5px solid #000;
   text-align: center;
+}
+.footer {
+  padding: 1rem 2rem;
+  min-height: 21px; 
+  max-height: 233px
 }
 ul.down {
   list-style: none;
@@ -166,6 +166,129 @@ ul.down {
 li.down {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 14px;
-  font-weight: 400;
-  padding: 21px 233px;
+  font-weight: 500;
+}
+/*_________________________________________________________________ 1 ___________________________________________________________________*/
+@media (max-width: 35em) {
+  .trademark {
+    background-color: #ffffffb9;
+    border-radius: 0 0 4px 0;
+  }
+  .marchio {
+    max-width: 3rem;
+    padding: 6em 1em 1em 1em;  
+  }
+body {
+   margin: 0 0;
+    scroll-behavior: smooth;
+  }
+main, .ppl {
+  max-width: 300px;
+  margin: 0;
+}
+section.box {
+  background-color: #E0E3C3;
+  border: none;
+  border-bottom: 2px solid #000000;
+  display: flex;
+  justify-content: center;
+  padding: 5.5em;
+  max-height: 10rem;
+}
+h3.about {
+  max-width: 22em;
+  font-family: 'Montagu Slab', sans;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  margin: 0;
+}
+section.squares {
+  padding: 3em;
+  }
+.oblò {
+  gap: 1em;
+  max-width: 1000px;
+}
+.ppl {
+    display: grid;
+    place-content: center;
+    padding: 0 2em 2em 2em;
+}
+.ppl1, .ppl2 {
+    border: 2px solid #000000;
+    border-radius: 80px;
+    max-width: 10em;
+    max-height: 10em;
+}
+.subtitle {
+    margin: 0;
+    padding: 2em;
+}
+.team {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    margin: 0;
+    max-width: 22em;
+}
+footer {
+    background-color:#B2C47E;
+    padding: 0;
+    border-top: 1.5px solid #000;
+    text-align: center;
+}
+ul.down {
+    list-style: none;
+    margin: 0;
+}
+.footer {
+  display: grid;
+  place-items: start;
+}
+li.down {
+  font-weight: 600;
+}
+/*_________________________________________________________________ 1 ___________________________________________________________________*/
+@media (max-width: 35em) {
+  .trademark {
+    border-radius: 0 0 4px 0;
+  }
+  .marchio {
+    max-width: 3rem;
+    padding: 6em 1em 1em 1em;  
+  }
+}
+/*_________________________________________________________________ 2 ___________________________________________________________________*/
+@media (min-width: 35em) {
+  .trademark {
+    background-color: #dbe3c3b9;
+    border-radius: 0 0 4px 0;
+  }
+  .marchio {
+    max-width: 3rem;
+    padding: 6em 1em 1em 1em;  
+}
+}
+@media (min-width: 50em) {
+  .trademark {
+    background-color: #dbe3c3b9;
+    border-radius: 0 0 4px 0;
+}
+  .marchio {
+    max-width: 4.5rem;
+    padding: 6em 1em 1em 1em;  
+}
+}
+@media (min-width: 70em) {
+  .trademark {
+    background-color: #dbe3c3b9;
+    border-radius: 0 0 4px 0;
+  }
+  .marchio {
+    max-width: 6rem;
+    padding: 6em 1em 1em 1em;  
+  }
+}
 }

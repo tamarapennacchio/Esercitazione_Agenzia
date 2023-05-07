@@ -130,10 +130,10 @@ a:hover {
 /*----------------------------------------- H E A D L I N E   ---------------------------------------------------------------------------*/
 div.headline {
   background-color: #e0e3c3;
+  border: 2px solid #000;
   display: grid;
   place-items: center;
   padding: 5em;
-  /*min-height: 144px;*/
 }
 h1.headline {
     color: #000;
@@ -164,7 +164,7 @@ h4 {
   padding: 1em;
 }
 p.main {
-  background-color: #E0E3C3;
+  border: 1px solid #000;
   border-radius: 30px;
   padding: 0 1.5em;
   font-family: 'Montagu Slab', serif;
@@ -196,25 +196,7 @@ p.main {
   object-fit: none;
   object-position: 67% 22.3%;
 }
-a.flag:hover {
-  font-family: 'Libre Franklin', sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  color:#000;
-  position: relative;
-  z-index: 1;
-}
-a.flag[data]:hover:after {
-  background: #7ec489f3;
-  border: 1px solid #000;
-  content: attr(data);
-  padding: 0.5em 4em;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  white-space: nowrap;
-}
-/*_______________________________________________________________________________________________________________________________________*/
+/*------------------------------------------------------ F R E C C I N A ----------------------------------------------------------------*/
 a.freccina {
     color: black;
     background: #ffffff;
@@ -230,17 +212,16 @@ a.freccina:hover {
   border: 1.5px solid #000;
   color: rgb(0, 0, 0);
 }
-/*----------------------------------------------------------------------- F O O T E R ---------------------------------------------------*/
+/*--------------------------------------------------------- F O O T E R -----------------------------------------------------------------*/
 footer {
   background-color:#B2C47E;
   border-top: 1.5px solid #000;
+  text-align: center;
 }
 .footer {
-  display: grid;
-  place-items: center;
   padding: 1rem 2rem;
   min-height: 21px; 
-  max-height: 233px;
+  max-height: 233px
 }
 ul.down {
   list-style: none;
@@ -249,11 +230,11 @@ ul.down {
 li.down {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
 }
 /*_______________________________________________________________________________________________________________________________________*/
 /*_________________________________________________________________ 1 ___________________________________________________________________*/
-@media (max-width: 40em) {
+@media (max-width: 35em) {
 .card {
   padding: 5em 1em 0 1em;
   display: grid;
@@ -272,11 +253,11 @@ main, .card  {
 .contentpics img {margin: 0 0 5em 0;}
 
 .trademark {
-  background-color: #dbe3c3b9;
+  background-color: #ffffffb9;
   border-radius: 0 0 4px 0;
 }
 .marchio {
-  max-width: 6rem;
+  max-width: 3rem;
   padding: 6em 1em 1em 1em;  
 }
 .navbar { /*navigation menù*/
@@ -352,13 +333,10 @@ color:#E0E3C3;
 }
 /*_______________________________________________________________________________________________________________________________________*/
 .heropic {
-  background-color: #d1e3c3;
+  background-color: #7EC489;
   display: grid;
   place-items: center;
   padding: 0%;
-  /*display: flex;
-  align-items: center;
-  justify-content: center;*/
   cursor: pointer;
 }
 .illustratore {
@@ -367,10 +345,8 @@ color:#E0E3C3;
   padding: 1em 1em 1em 0;
 }
 p.main {
-  background-color: #7EC489;
-  border-radius: 30px;
+  border: 1px solid rgb(0, 0, 0);
   color:#000000;
-  padding: 0 2em;
   font-family: 'Montagu Slab', serif;
   font-size: 24px;
   font-weight: 500;
@@ -386,6 +362,7 @@ p.main {
 }
 div.headline {
   background-color: #fff;
+  border: none;
   display: grid;
   padding: 5em;
 }
