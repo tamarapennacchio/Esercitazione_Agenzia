@@ -20,12 +20,13 @@ main {
   display: grid;
   justify-content: start;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
 }
 .marchio {
   max-width: 6rem;
   padding: 8em 0 0 8em;  
 }
+/*------------------------------------------------ N A V / B A R ------------------------------------------------------------------------*/
 nav {
   background-color: #B2C47E;
   border-bottom: 1.5px solid #000;
@@ -35,7 +36,7 @@ nav {
 nav a:hover {
   background-color: #7EC489;
   color: #E0E3C3;
-  padding: 1em 2em;
+  padding: 1rem 2rem;
 }
 ul.up {
   list-style: none;
@@ -46,32 +47,30 @@ li.up {
   font-size: 14px;
   font-weight: 500;
   display: inline-block;
-  padding: 1em 2em;
-  margin: 0;
+  padding: 1rem 2rem;
 }
 a {
   color: #000;
   text-decoration: none;
 }
 a:hover {
-  color: #D1E3C3;
+  color: #DBE3C3;
 }
 .photo img {
   max-height: 30rem;
   width: 100%;
   object-fit: cover;
-  object-position: center right;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 div.nastro {
   background-color: #D1E3C3;
-  border: 2px solid #000;
+  border: 1.5px solid #000;
   display: grid;
   place-items: center;
-  padding: 5em;
+  padding: 7em;
+  max-height: 10rem;
 }
 h2 {
-    color: #000;
     font-family: 'Montagu Slab', serif;
     font-size: 48px;
     font-weight: 500;
@@ -203,17 +202,43 @@ li.down {
 /*_________________________________________________________________ 1 ___________________________________________________________________*/
 @media (max-width: 35em) {
   .trademark {
-    background-color: #ffffffb9;
     border-radius: 0 0 4px 0;
   }
   .marchio {
     max-width: 3rem;
     padding: 6em 1em 1em 1em;  
   }
+  footer {
+    background-color:#B2C47E;
+    padding: 0;
+    border-top: 1.5px solid #000;
+    text-align: center;
+}
+ul.down {
+    list-style: none;
+    margin: 0;
+}
+.footer {
+  display: grid;
+  place-items: start;
+}
+li.down {
+  font-weight: 600;
+}
 }
 /*_________________________________________________________________ 2 ___________________________________________________________________*/
+@media (max-width: 35em) {
+.trademark {
+    border-radius: 0 0 4px 0;
+  }
+.marchio {
+    max-width: 3rem;
+    padding: 6em 1em 1em 1em;  
+  }
+/*_________________________________________________________________ 3 ___________________________________________________________________*/
 @media (min-width: 35em) {
   .trademark {
+    background-color: #dbe3c3b9;
     border-radius: 0 0 4px 0;
   }
   .marchio {
@@ -223,6 +248,7 @@ li.down {
 }
 @media (min-width: 50em) {
   .trademark {
+    background-color: #dbe3c3b9;
     border-radius: 0 0 4px 0;
 }
   .marchio {
@@ -232,10 +258,11 @@ li.down {
 }
 @media (min-width: 70em) {
   .trademark {
+    background-color: #dbe3c3b9;
     border-radius: 0 0 4px 0;
-  }
-  .marchio {
-    max-width: 6rem;
-    padding: 6em 1em 1em 1em;  
-  }
+}
+.marchio {
+  max-width: 6rem;
+  padding: 6em 1em 1em 1em;  
+}
 }

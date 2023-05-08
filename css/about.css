@@ -66,19 +66,19 @@ a:hover {
 section.box {
   background-color: #E0E3C3;
   border: none;
-  border-bottom: 1.5px solid #000000;
+  border-bottom: 1.5px solid #000;
   display: grid;
   place-items: center;
   padding: 7em;
   max-height: 10rem;
 }
 h3.about {
-  font-family: 'Montagu Slab', sans;
+  font-family: 'Montagu Slab', serif;
   font-size: 24px;
   font-weight: 500;
   line-height: 28.8px;
-  margin: 0;
   max-width: 45rem;
+  margin: 0;
 }
 .oblò {
   display: flex;
@@ -170,11 +170,10 @@ li.down {
 }
 /*_________________________________________________________________ 1 ___________________________________________________________________*/
 @media (max-width: 35em) {
-  .trademark {
-    background-color: #ffffffb9;
-    border-radius: 0 0 4px 0;
+.trademark {
+  border-radius: 0 0 4px 0;
   }
-  .marchio {
+.marchio {
     max-width: 3rem;
     padding: 6em 1em 1em 1em;  
   }
@@ -250,7 +249,7 @@ ul.down {
 li.down {
   font-weight: 600;
 }
-/*_________________________________________________________________ 1 ___________________________________________________________________*/
+/*_________________________________________________________________ 2 ___________________________________________________________________*/
 @media (max-width: 35em) {
   .trademark {
     border-radius: 0 0 4px 0;
@@ -260,7 +259,7 @@ li.down {
     padding: 6em 1em 1em 1em;  
   }
 }
-/*_________________________________________________________________ 2 ___________________________________________________________________*/
+/*_________________________________________________________________ 3 ___________________________________________________________________*/
 @media (min-width: 35em) {
   .trademark {
     background-color: #dbe3c3b9;
