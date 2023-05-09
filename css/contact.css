@@ -13,14 +13,13 @@ img {
   display: block;
 }
 main {
-  max-width: 1000px;
   margin: 0;
 }
 .trademark {
   display: grid;
   justify-content: start;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
 }
 .marchio {
   max-width: 6rem;
@@ -85,26 +84,28 @@ p {
 }
 /*-----------------------------------------------------------------------------------------------------------------*/
 .recapiti {
-  background-color: rgb(161, 223, 249);
-  display: grid;
-  place-items: end;
-  gap: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4em;
+  margin: 3em;
+  gap: 7em;
+}
+.recapiti p {
+  margin: 0;
 }
 .viabold {
   font-weight: 800;
-  margin: 13px;
 }
 .via, .mail, .tel {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 16px;
-  font-weight: 200;
-  line-height: 16px;
-  margin: 13px;
+  font-weight: 400;
 }
 /*------------------------------------------------- F O R M  /  C O N T A C T -----------------------------------------------------------*/
-section.contattaci {
+.contattaci {
   display: grid;
-  place-items: end;
+  place-items: center;
 }
 *:focus {
 	outline: 0;
@@ -203,44 +204,27 @@ li.down {
 @media (max-width: 35em) {
   .trademark {
     border-radius: 0 0 4px 0;
+    }
+  .marchio {
+      max-width: 3rem;
+      padding: 6em 1em 1em 1em;  
+}
+}
+/*_________________________________________________________________ 2 ___________________________________________________________________*/
+@media (max-width: 35em) {
+  .trademark {
+    border-radius: 0 0 4px 0;
   }
   .marchio {
     max-width: 3rem;
     padding: 6em 1em 1em 1em;  
   }
-  footer {
-    background-color:#B2C47E;
-    padding: 0;
-    border-top: 1.5px solid #000;
-    text-align: center;
 }
-ul.down {
-    list-style: none;
-    margin: 0;
-}
-.footer {
-  display: grid;
-  place-items: start;
-}
-li.down {
-  font-weight: 600;
-}
-}
-/*_________________________________________________________________ 2 ___________________________________________________________________*/
-@media (max-width: 35em) {
-.trademark {
-    border-radius: 0 0 4px 0;
-  }
-.marchio {
-    max-width: 3rem;
-    padding: 6em 1em 1em 1em;  
-  }
 /*_________________________________________________________________ 3 ___________________________________________________________________*/
 @media (min-width: 35em) {
   .trademark {
-    background-color: #dbe3c3b9;
-    border-radius: 0 0 4px 0;
-  }
+  border-radius: 0 0 4px 0;
+}
   .marchio {
     max-width: 3rem;
     padding: 6em 1em 1em 1em;  
@@ -260,9 +244,9 @@ li.down {
   .trademark {
     background-color: #dbe3c3b9;
     border-radius: 0 0 4px 0;
-}
-.marchio {
-  max-width: 6rem;
-  padding: 6em 1em 1em 1em;  
-}
+  }
+  .marchio {
+    max-width: 6rem;
+    padding: 6em 1em 1em 1em;  
+  }
 }

@@ -112,6 +112,17 @@ a {
 a:hover {
     color: #DBE3C3;
 }
+/*---------------------------------------------------------- H E R O  /  P I C ----------------------------------------------------------*/
+.hero {
+  max-width: 1000em;
+}
+.herobox img {
+  opacity: 40%;
+  max-height: 30em;
+  object-fit: cover;
+  width: 100%;
+}
+/*----------------------------------------------------- E V I D E N Z I A T O R E -------------------------------------------------------*/
 .sito:hover {
   color: #000;
 }
@@ -137,28 +148,22 @@ a:hover {
 .sito:hover:after {
     width: 100%;
 }
-/*.herobox {
-    height: 893px;
-    background-image: url("../pics/la/5.png");
-    background-size: cover;
-    background-position: 0 15%;
-    background-repeat: no-repeat;
-    opacity: 45%;
-}*/
-/*--------------------------------------------- H E A D L I N E --------------------------------------------------*/
-/*.autore {
-  display: flex;
-  justify-content: end;
-  padding: 610px 0 0 987px;
+/*------------------------------------------------------- H E A D L I N E ---------------------------------------------------------------*/
+.autore {
+  width: 100%;
+  display: grid;
+  place-items: center;
   position: absolute;
   z-index: 1;
+  margin: 0;
+  padding: 13em 0 0 21em;
 }
 h2.name {
   color: #000;
   font-family: 'Montagu Slab', serif;
   font-size: 40px;
   font-weight: 500;
-  max-width: 50px;
+  max-width: 8rem;
   margin: 0;
 }
 p.web {
@@ -166,8 +171,8 @@ p.web {
   font-size: 14px;
   font-weight: 500;
   margin: 0;
-}*/
-/*---------------------------------------------- M A I N ----------------------------------------------------------*/
+}
+/*----------------------------------------------------------- T E X T -------------------------------------------------------------------*/
 .about {
   background-color: #dbe3c3;
   display: grid;
@@ -186,7 +191,7 @@ h5.z {
   font-weight: 400;
   line-height: 24px;
 }
-/*-------------------------------------- M A I N ---------------------------------------------------*/
+/*---------------------------------------------------------- M A I N --------------------------------------------------------------------*/
 .card {
   display: grid;
   place-items: center;
@@ -203,7 +208,7 @@ main, .card {
   max-width: 40rem;
   padding: 5em;
 }
-/*-------------------------------- F R E C C I N A ---------------------------------------------------*/
+/*--------------------------------------------- F R E C C I N A ---------------------------------------------------*/
 a.freccina {
     color: black;
     background: #ffffff;
@@ -238,3 +243,68 @@ a.freccina {
       font-weight: 400;
       padding: 21px 233px;
     }
+    /*_________________________________________________________________ 1 ___________________________________________________________________*/
+@media (max-width: 35em) {
+  .trademark {
+    border-radius: 0 0 4px 0;
+  }
+  .marchio {
+    max-width: 3rem;
+    padding: 6em 1em 1em 1em;  
+  }
+  .autore {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+    padding: 3em 0 0 8em;
+  }
+  h2.name {
+    color: #000;
+    font-family: 'Montagu Slab', serif;
+    font-size: 24px;
+    font-weight: 500;
+    max-width: 6rem;
+    margin: 0;
+  }
+  }
+  /*_________________________________________________________________ 2 ___________________________________________________________________*/
+  @media (max-width: 35em) {
+    .trademark {
+      border-radius: 0 0 4px 0;
+    }
+    .marchio {
+      max-width: 3rem;
+      padding: 6em 1em 1em 1em;  
+    }
+  }
+  /*_________________________________________________________________ 3 ___________________________________________________________________*/
+  @media (min-width: 35em) {
+    .trademark {
+      border-radius: 0 0 4px 0;
+    }
+    .marchio {
+      max-width: 3rem;
+      padding: 6em 1em 1em 1em;  
+  }
+  }
+  @media (min-width: 50em) {
+    .trademark {
+      border-radius: 0 0 4px 0;
+  }
+    .marchio {
+      max-width: 4.5rem;
+      padding: 6em 1em 1em 1em;  
+  }
+  }
+  @media (min-width: 70em) {
+    .trademark {
+      border-radius: 0 0 4px 0;
+    }
+    .marchio {
+      max-width: 6rem;
+      padding: 6em 1em 1em 1em;  
+    }
+  }

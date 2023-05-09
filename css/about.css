@@ -56,6 +56,7 @@ a {
 a:hover {
   color: #DBE3C3;
 }
+/*------------------------------------------------ H E R O ---------------------------------------------------------------------*/
 .photo img {
   max-height: 30rem;
   width: 100%;
@@ -170,9 +171,6 @@ li.down {
 }
 /*_________________________________________________________________ 1 ___________________________________________________________________*/
 @media (max-width: 35em) {
-.trademark {
-  border-radius: 0 0 4px 0;
-  }
 .marchio {
     max-width: 3rem;
     padding: 6em 1em 1em 1em;  
@@ -262,7 +260,6 @@ li.down {
 /*_________________________________________________________________ 3 ___________________________________________________________________*/
 @media (min-width: 35em) {
   .trademark {
-    background-color: #dbe3c3b9;
     border-radius: 0 0 4px 0;
   }
   .marchio {
@@ -272,7 +269,6 @@ li.down {
 }
 @media (min-width: 50em) {
   .trademark {
-    background-color: #dbe3c3b9;
     border-radius: 0 0 4px 0;
 }
   .marchio {
@@ -282,7 +278,6 @@ li.down {
 }
 @media (min-width: 70em) {
   .trademark {
-    background-color: #dbe3c3b9;
     border-radius: 0 0 4px 0;
   }
   .marchio {

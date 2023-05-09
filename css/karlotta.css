@@ -19,6 +19,7 @@ main {
 .pics img {
   max-width: 700px;
 }
+/*-------------------------------------------------------- T R A D E M A R K ------------------------------------------------------------*/
 .trademark {
   display: grid;
   justify-content: start;
@@ -29,7 +30,7 @@ main {
   max-width: 6rem;
   padding: 8em 0 0 8em;  
 }
-/*---------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------- N A V  B A R -----------------------------------------------------------------*/
 .navbar { /*navigation menù*/
     border-bottom: 1.5px solid #000;
     font-family: 'Libre Franklin', sans-serif;
@@ -39,7 +40,6 @@ main {
     justify-content: end;
     overflow:scroll;
     background-color: #B2C47E;
-
 }
 .navbar a { /*navigation links*/
   border: none;
@@ -61,7 +61,6 @@ main {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 14px;
   font-weight: 500;
-
 }
 .subnav .subnavbtn { /*subnav button*/
   border: none;
@@ -106,12 +105,23 @@ main {
   justify-content: end;
 }
 a {
-    color: #000;
-    text-decoration: none;
+  color: #000;
+  text-decoration: none;
 }
 a:hover {
-    color: #DBE3C3;
+  color: #DBE3C3;
 }
+/*---------------------------------------------------------- H E R O  /  P I C ----------------------------------------------------------*/
+.hero {
+  max-width: 1000em;
+}
+.herobox img {
+  opacity: 40%;
+  max-height: 30em;
+  object-fit: cover;
+  width: 100%;
+}
+/*----------------------------------------------------- E V I D E N Z I A T O R E -------------------------------------------------------*/
 .sito:hover {
   color: #000;
 }
@@ -137,33 +147,31 @@ a:hover {
 .sito:hover:after {
     width: 100%;
 }
-/*.herobox {
-    height: 893px;
-    background-image: url("../pics/karlotta/5.png");
-    background-size: cover;
-    background-position: 0 76%;
-    background-repeat: no-repeat;
-    opacity: 35%;
-}*/
-/*--------------------------------------------- H E A D L I N E --------------------------------------------------*/
-a.freccina {
-    color: black;
-    background: #ffffff;
-    font-display: center;
-    border-radius: 20px;
-    padding: 10px;
-    text-decoration: none;
-    position: fixed;
-    bottom: 8px;
-    right: 15px;
-    z-index: 99px;
-    }
-  a.freccina:hover {
-    border: 1px solid #000;
-    color: white;
-    background-color: #7EC489;
-   }
-   /*------------------------------------------------------- M A I N ---------------------------------------------------*/
+/*------------------------------------------------------- H E A D L I N E ---------------------------------------------------------------*/
+.autore {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  z-index: 1;
+  margin: 0;
+  padding: 13em 0 0 21em;
+}
+h2.name {
+  color: #000;
+  font-family: 'Montagu Slab', serif;
+  font-size: 40px;
+  font-weight: 500;
+  max-width: 11rem;
+  margin: 0;
+}
+p.web {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+/*----------------------------------------------------------- T E X T -------------------------------------------------------------------*/
 .about {
   background-color: #dbe3c3;
   display: grid;
@@ -182,7 +190,7 @@ h5.z {
   font-weight: 400;
   line-height: 24px;
 }
-/*-------------------------------------- M A I N ---------------------------------------------------*/
+/*---------------------------------------------------------- M A I N --------------------------------------------------------------------*/
 .card {
   display: grid;
   place-items: center;
@@ -199,20 +207,102 @@ main, .card {
   max-width: 40rem;
   padding: 5em;
 }
-    /*----------------------------------------------------------------------- F O O T E R --------------------------------------------------*/
-    footer {
-      background-color:#B2C47E;
-      padding: 0;
-      border-top: 1.5px solid #000;
-      text-align: center;
-    }
-    ul.down {
-      list-style: none;
-      margin: 0;
-    }
-    li.down {
-      font-family: 'Libre Franklin', sans-serif;
-      font-size: 14px;
-      font-weight: 400;
-      padding: 21px 233px;
-    }
+/*------------------------------------------------------ F R E C C I N A ----------------------------------------------------------------*/
+a.freccina {
+  color: black;
+  background: #ffffff;
+  font-display: center;
+  border-radius: 20px;
+  padding: 10px;
+  text-decoration: none;
+  position: fixed;
+  bottom: 8px;
+  right: 15px;
+  z-index: 99px;
+  }
+a.freccina:hover {
+  border: 1px solid #000;
+  color: white;
+  background-color: #7ec489;
+ }
+ /*-------------------------------------------------------- F O O T E R -----------------------------------------------------------------*/
+ footer {
+  background-color:#B2C47E;
+  border-top: 1.5px solid #000;
+  text-align: center;
+}
+ul.down {
+  list-style: none;
+  margin: 0;
+}
+li.down {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 1em;
+}
+/*_________________________________________________________________ 1 ___________________________________________________________________*/
+@media (max-width: 35em) {
+.trademark {
+  border-radius: 0 0 4px 0;
+}
+.marchio {
+  max-width: 3rem;
+  padding: 6em 1em 1em 1em;  
+}
+.autore {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  z-index: 1;
+  margin: 0;
+  padding: 3em 0 0 8em;
+}
+h2.name {
+  color: #000;
+  font-family: 'Montagu Slab', serif;
+  font-size: 24px;
+  font-weight: 500;
+  max-width: 9rem;
+  margin: 0;
+}
+}
+/*_________________________________________________________________ 2 ___________________________________________________________________*/
+@media (max-width: 35em) {
+  .trademark {
+    border-radius: 0 0 4px 0;
+  }
+  .marchio {
+    max-width: 3rem;
+    padding: 6em 1em 1em 1em;  
+  }
+}
+/*_________________________________________________________________ 3 ___________________________________________________________________*/
+@media (min-width: 35em) {
+  .trademark {
+    border-radius: 0 0 4px 0;
+  }
+  .marchio {
+    max-width: 3rem;
+    padding: 6em 1em 1em 1em;  
+}
+}
+@media (min-width: 50em) {
+  .trademark {
+    border-radius: 0 0 4px 0;
+}
+  .marchio {
+    max-width: 4.5rem;
+    padding: 6em 1em 1em 1em;  
+}
+}
+@media (min-width: 70em) {
+  .trademark {
+    border-radius: 0 0 4px 0;
+  }
+  .marchio {
+    max-width: 6rem;
+    padding: 6em 1em 1em 1em;  
+  }
+}
