@@ -36,7 +36,7 @@ nav {
 nav a:hover {
   background-color: #7EC489;
   color: #E0E3C3;
-  padding: 1rem 2rem;
+  padding: 1em 2em;
 }
 ul.up {
   list-style: none;
@@ -47,7 +47,7 @@ li.up {
   font-size: 14px;
   font-weight: 500;
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 1em 2em;
 }
 a {
   color: #000;
