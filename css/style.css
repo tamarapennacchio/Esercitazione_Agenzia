@@ -19,6 +19,7 @@ main {
 .contentpics img {
   max-width: 350px;
 }
+/*---------------------------------------------- T R A D E M A R K ---------------------------------------------------------------------*/
 .trademark {
   display: grid;
   justify-content: start;
@@ -250,15 +251,6 @@ main, .card  {
   max-width: 1000px;
 }
 .contentpics img {margin: 0 0 5em 0;}
-
-.trademark {
-  background-color: #ffffff7c;
-  border-radius: 0 0 4px 0;
-}
-.marchio {
-  max-width: 3rem;
-  padding: 6em 1em 1em 1em;  
-}
 .navbar { /*navigation menù*/
   border-bottom: 1.5px solid #000;
   font-family: 'Libre Franklin', sans-serif;
@@ -402,22 +394,40 @@ a.freccina:hover {
   color: rgb(0, 0, 0);}
 }
 /*_________________________________________________________________ 2 ___________________________________________________________________*/
-
-/*_______________________________________________________________ 3 ______________________________________________________________________*/
-@media (min-width: 40em) {
-.card {
-  padding: 9em;
-  display: grid;
-  place-items: center;
+@media (max-width: 35em) {
+  .trademark {
+    border-radius: 0 0 4px 0;
+  }
+  .marchio {
+    max-width: 4rem;
+    padding: 6em 1em 1em 3em;  
+  }
 }
-main, .card  {
-  max-width: 1000em;
+/*_________________________________________________________________ 3 ___________________________________________________________________*/
+@media (min-width: 35em) {
+  .trademark {
+  border-radius: 0 0 4px 0;
 }
-.contentpics {
-  max-width: 100em;
-  margin: 0 0 5em 0;
+  .marchio {
+    max-width: 4rem;
+    padding: 6em 1em 1em 3em;  
 }
-.contentpics img {
-  margin: 0 0 5em 0;
 }
+@media (min-width: 50em) {
+  .trademark {
+    border-radius: 0 0 4px 0;
+}
+  .marchio {
+    max-width: 4.5rem;
+    padding: 6em 1em 1em 6em;  
+}
+}
+@media (min-width: 70em) {
+  .trademark {
+    border-radius: 0 0 4px 0;
+  }
+  .marchio {
+    max-width: 6rem;
+    padding: 6em 1em 1em 9em;  
+  }
 }

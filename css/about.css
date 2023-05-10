@@ -134,6 +134,7 @@ img.pulce {
   max-width: 100%;
   object-fit: cover;
 }
+/*------------------------------------------------------ F R E C C I N A ----------------------------------------------------------------*/
 a.freccina {
   color: black;
   background: #ffffff;
@@ -171,10 +172,6 @@ li.down {
 }
 /*_________________________________________________________________ 1 ___________________________________________________________________*/
 @media (max-width: 35em) {
-.marchio {
-    max-width: 3rem;
-    padding: 6em 1em 1em 1em;  
-  }
 body {
    margin: 0 0;
     scroll-behavior: smooth;
@@ -186,7 +183,7 @@ main, .ppl {
 section.box {
   background-color: #E0E3C3;
   border: none;
-  border-bottom: 2px solid #000000;
+  border-bottom: 1.5px solid #000000;
   display: flex;
   justify-content: center;
   padding: 5.5em;
@@ -247,24 +244,25 @@ ul.down {
 li.down {
   font-weight: 600;
 }
+}
 /*_________________________________________________________________ 2 ___________________________________________________________________*/
 @media (max-width: 35em) {
   .trademark {
     border-radius: 0 0 4px 0;
   }
   .marchio {
-    max-width: 3rem;
-    padding: 6em 1em 1em 1em;  
+    max-width: 2rem;
+    padding: 6em 1em 1em 3em;  
   }
 }
 /*_________________________________________________________________ 3 ___________________________________________________________________*/
 @media (min-width: 35em) {
   .trademark {
-    border-radius: 0 0 4px 0;
-  }
+  border-radius: 0 0 4px 0;
+}
   .marchio {
     max-width: 3rem;
-    padding: 6em 1em 1em 1em;  
+    padding: 6em 1em 1em 3em;  
 }
 }
 @media (min-width: 50em) {
@@ -273,7 +271,7 @@ li.down {
 }
   .marchio {
     max-width: 4.5rem;
-    padding: 6em 1em 1em 1em;  
+    padding: 6em 1em 1em 6em;  
 }
 }
 @media (min-width: 70em) {
@@ -282,7 +280,6 @@ li.down {
   }
   .marchio {
     max-width: 6rem;
-    padding: 6em 1em 1em 1em;  
+    padding: 6em 1em 1em 9em;  
   }
-}
 }
