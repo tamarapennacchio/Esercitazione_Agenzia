@@ -34,9 +34,8 @@ nav {
   justify-content: end;
 }
 nav a:hover {
-  background-color: #7EC489;
   color: #E0E3C3;
-  padding: 1em 2em;
+  padding: 0.7em;
 }
 ul.up {
   list-style: none;

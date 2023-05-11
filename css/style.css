@@ -234,6 +234,15 @@ li.down {
 }
 /*_________________________________________________________________ 1 ___________________________________________________________________*/
 @media (max-width: 35em) {
+  /*link del menù a tendina*/
+  .subnav-content a {
+  border: none;
+  text-decoration: none;
+  position: relative; 
+  z-index: 1;
+  margin: 0.3em;
+  padding: 0.3em;
+} 
 .card {
   padding: 5em 1em 0 1em;
   display: grid;
@@ -274,7 +283,7 @@ p.main {
 .mainpic img {
   object-fit: none;
   object-position: 53% 92%;
-  max-width: 30rem;
+  max-height: 39.4rem;
 }
 .mainpic img:hover {
   opacity: 0.9;
