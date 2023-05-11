@@ -109,7 +109,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #e3c3c3;
+  color: #E0E3C3;
 }
 /*_______________________________________________________________________________________________________________________________________*/
 .heropic {
@@ -121,7 +121,7 @@ a:hover {
 .mainpic img {
   object-fit: none;
   object-position: 53% 91.5%;
-  max-width: 35rem;
+  max-width: 30rem;
 }
 .mainpic img:hover {
   opacity: 0.9;
@@ -129,7 +129,7 @@ a:hover {
 /*----------------------------------------- H E A D L I N E   ---------------------------------------------------------------------------*/
 div.headline {
   background-color: #e0e3c3;
-  border: 2px solid #000;
+  border-bottom: 2px solid #000;
   display: grid;
   place-items: center;
   padding: 5em;
@@ -158,16 +158,17 @@ h4 {
   place-items: center;
 }
 .illustratore {
-  display: grid;
-  place-items: center;
-  padding: 1em;
+  display: flex;
+  justify-content: start;
+  padding: 2em 0 1em 0;
+  margin: 0;
 }
 p.main {
   border: 1px solid #000;
   border-radius: 30px;
   padding: 0 1.5em;
   font-family: 'Montagu Slab', serif;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 500;
   margin: 0;
 }
@@ -211,7 +212,7 @@ a.freccina:hover {
   border: 1.5px solid #000;
   color: rgb(0, 0, 0);
 }
-/*--------------------------------------------------------- F O O T E R -----------------------------------------------------------------*/
+/*-------------------------------------------------------- F O O T E R -----------------------------------------------------------------*/
 footer {
   background-color:#B2C47E;
   border-top: 1.5px solid #000;
@@ -262,9 +263,14 @@ main, .card  {
 .heropic {
   background-color: #7EC489;
   display: grid;
-  place-items: center;
+  place-items: end;
   padding: 0%;
   cursor: pointer;
+}
+.mainpic img {
+  object-fit: none;
+  object-position: 40% 91.5%;
+  max-width: 15rem;
 }
 .illustratore {
   display: grid;
@@ -275,9 +281,13 @@ p.main {
   border: 1px solid rgb(0, 0, 0);
   color:#000000;
   font-family: 'Montagu Slab', serif;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 500;
   margin: 0;
+}
+p.main:hover {
+  background-color: #000;
+  color: #fff;
 }
 .mainpic img {
   object-fit: none;
