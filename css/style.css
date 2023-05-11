@@ -113,10 +113,9 @@ a:hover {
 }
 /*_______________________________________________________________________________________________________________________________________*/
 .heropic {
-  background-color: #d1e3c3;
+  background-color: #D1E3C3;
   display: grid;
   place-items: center;
-  padding: 0 2em 2em 0;
   cursor: pointer;
 }
 .mainpic img {
