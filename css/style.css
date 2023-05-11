@@ -90,7 +90,7 @@ main {
   border: none;
   color:#000;
   text-decoration: none;
-  padding: 1rem 2rem;
+  padding: 1em 2em;
   position: relative;
   z-index: 1;
 }  
@@ -110,7 +110,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #DBE3C3;
+  color: #e3c3c3;
 }
 /*_______________________________________________________________________________________________________________________________________*/
 .heropic {
@@ -295,7 +295,8 @@ color:#E0E3C3;
 /* Style the subnav content - positioned absolute */
 .subnav-content {
  background-color: #e0e3c3c5;
- border: 1.5px solid #000000;
+ border: none;
+ border-bottom: 1.5px solid #000000;
  display: none;
  position: absolute;
  left: 0;

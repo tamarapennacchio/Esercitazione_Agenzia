@@ -13,7 +13,6 @@ img {
     display: block;
 }
 main {
-  max-width: 1000px;
   margin: 0;
 }
 .pics img {
@@ -44,8 +43,7 @@ main {
 .navbar a { /*navigation links*/
   border: none;
   display: grid;
-  grid-template-columns: 1fr;
-  justify-content: start;
+  justify-content: center;
   font-family: 'Libre Franklin', sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -70,35 +68,33 @@ main {
   margin: 0;
 }
 /* Add a green background color to navigation links on hover */
-.navbar a:hover, .subnav:hover .subnavbtn {
-  background-color: #7EC489;
-  color:#E0E3C3;
+.navbar a:hover{
+  border-bottom: 4px solid #000;
 }  
-  /* Style the subnav content - positioned absolute */
+.subnav:hover .subnavbtn {
+  border-bottom: 4px solid #000;
+  color:#E0E3C3;
+} 
+/* Style the subnav content - positioned absolute */
 .subnav-content {
-   background-color: #7ec489a7;
-   border: 1.5px solid #e0e3c3;
+   border-bottom: 1.5px solid #000;
    display: none;
    position: absolute;
-   left: 0;
-   width: 100%;
-   z-index: 2;
+   right: 0;
+   left: 64.5em;
+   width: 45em;
+   z-index: 3;
 }  
-  /* Style the subnav links */
+/* Style the subnav links */
 .subnav-content a {
   border: none;
   color:#000;
   text-decoration: none;
-  padding: 13px 55px;
+  padding: 1em 1em;
   position: relative;
   z-index: 1;
-}  
-.subnav-content a:hover {
-  background-color: #E0E3C3;
-  color: #7EC489;
-  border-radius: 30px;
 }
-  /* When you move the mouse over the subnav container, open the subnav content */
+/* When you move the mouse over the subnav container, open the subnav content */
 .subnav:hover .subnav-content {
   display: flex;
   justify-content: end;
@@ -244,7 +240,86 @@ li.down {
 }
 /*_________________________________________________________________ 1 ___________________________________________________________________*/
 @media (max-width: 35em) {
-.autore {
+.navbar { /*navigation menù*/
+  border-bottom: 1.5px solid #000;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  justify-content: end;
+  overflow:scroll;
+  background-color: #B2C47E;
+}
+.navbar a { /*navigation links*/
+  border: none;
+  display: grid;
+  place-items: center;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 1em 2em;
+  text-decoration: none;
+}
+.subnav { /*subnavigation menù*/
+  float: right;
+  overflow: hidden;
+}
+.subnavbtn {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.subnav .subnavbtn { /*subnav button*/
+  border: none;
+  outline: none;
+  padding: 1em 2em;
+  margin: 0;
+}
+.navbar a:hover {
+  border-bottom: 4px solid #000;
+}
+/* Add a green background color to navigation links on hover */
+.navbar a:hover .subnav:hover .subnavbtn {
+  border-bottom: 4px solid #000;
+  padding: 0.5em;
+}  
+.subnav:hover .subnavbtn {
+  border-bottom: 4px solid #000;
+  color:#7EC489;
+} 
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  border: 1.5px solid #000;
+  position: absolute;
+  left: 13em;
+  width: 30%;
+  height: 27em;
+  z-index: 2;
+}  
+/* Style the subnav links */
+.subnav-content a {
+  border: none;
+  color:#7EC489;
+  text-decoration: none;
+  padding: 1em;
+  position: relative;
+  z-index: 1;
+}
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  background-color: #e0e3c3c5;
+  color: #000;
+  display: grid;
+  place-items: center;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #DBE3C3;
+}
+  .autore {
   width: 100%;
   display: grid;
   place-items: center;
@@ -263,7 +338,7 @@ h2.name {
 }
 /*_______________________________________________________________________________________________________________________________________*/
 .about {
-  background-color: #dbe3c3;
+  background-color: #ffffff;
   display: grid;
   place-items: center;
   margin: 0;
@@ -285,6 +360,7 @@ h5.z {
   place-items: center;
 }
 .pics {
+  background-color: #dbe3c3;
   display: grid;
   place-items: center;
 }
