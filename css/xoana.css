@@ -249,7 +249,7 @@ li.down {
       place-items: center end;
       position: absolute;
       z-index: 1;
-      margin: 5em 0 0 -5em; /*ok*/
+      margin: 5em 0 0 -5em;
       padding: 0;
     }
   h2.name {
@@ -262,7 +262,7 @@ li.down {
   }
   /*_______________________________________________________________________________________________________________________________________*/
   .about {
-    background-color: #ffffff;
+    background-color: #fff;
     display: grid;
     place-items: center;
     margin: 0;
@@ -290,7 +290,7 @@ li.down {
   }
   .pics img {
     width: 100%;
-    padding: 3em 0 0 0;
+    padding: 3em 0 3em 0;
   }
   footer {
     background-color:#B2C47E;
@@ -351,7 +351,7 @@ li.down {
     place-items: center end;
     position: absolute;
     z-index: 1;
-    margin: 8em 0 0 -6em; /*ok*/
+    margin: 8em 0 0 -6em;
     padding: 0;
   }
   h2.name {
@@ -365,9 +365,6 @@ li.down {
   }
   /*_________________________________________________________________ 4 ___________________________________________________________________*/
   @media (min-width: 50em) {
-    .trademark {
-      border-radius: 0 0 4px 0;
-  }
     .marchio {
       max-width: 4.5rem;
       padding: 6em 1em 1em 6em;  
@@ -378,7 +375,7 @@ li.down {
     place-items: center end;
     position: absolute;
     z-index: 1;
-    margin: 21em 0 0 -25em; /*ok*/
+    margin: 21em 0 0 -25em;
     padding: 0;
   }
   h2.name {

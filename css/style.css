@@ -13,7 +13,7 @@ img {
   display: block;
 }
 main {
-  max-width: 1000px;
+  max-width: 100%;
   margin: 0;
 }
 .contentpics img {
@@ -113,7 +113,6 @@ a:hover {
 }
 /*_______________________________________________________________________________________________________________________________________*/
 .heropic {
-  background-color: #D1E3C3;
   display: grid;
   place-items: center;
   cursor: pointer;
@@ -122,6 +121,7 @@ a:hover {
   object-fit: none;
   object-position: 53% 91.5%;
   max-width: 30rem;
+  margin: 0 0 5em 0;
 }
 .mainpic img:hover {
   opacity: 0.9;
@@ -129,7 +129,8 @@ a:hover {
 /*----------------------------------------- H E A D L I N E   ---------------------------------------------------------------------------*/
 div.headline {
   background-color: #e0e3c3;
-  border-bottom: 2px solid #000;
+  border-top: 1.5px solid #000;
+  border-bottom: 1.5px solid #000;
   display: grid;
   place-items: center;
   padding: 5em;
@@ -153,14 +154,14 @@ h4 {
   opacity: 0.7;
 }
 .card {
-  padding: 5em 1em 0 1em;
+  padding: 8em 1em 3em 1em;
   display: grid;
   place-items: center;
 }
 .illustratore {
   display: flex;
   justify-content: start;
-  padding: 2em 0 1em 0;
+  padding: 3em 0 1em 0;
   margin: 0;
 }
 p.main {
@@ -235,7 +236,7 @@ li.down {
 /*_________________________________________________________________ 1 ___________________________________________________________________*/
 @media (max-width: 35em) {
   /*link del menù a tendina*/
-  .subnav-content a {
+.subnav-content a {
   border: none;
   text-decoration: none;
   position: relative; 
@@ -244,7 +245,7 @@ li.down {
   padding: 0.3em;
 } 
 .card {
-  padding: 5em 1em 0 1em;
+  padding: 8em 1em 0 1em;
   display: grid;
   place-items: center;
 }
@@ -261,16 +262,20 @@ main, .card  {
 .contentpics img {margin: 0 0 5em 0;}
 /*_______________________________________________________________________________________________________________________________________*/
 .heropic {
-  background-color: #7EC489;
+  background-color: #ffffff;
   display: grid;
   place-items: end;
-  padding: 0%;
+  padding: 0;
   cursor: pointer;
 }
 .mainpic img {
   object-fit: none;
-  object-position: 40% 91.5%;
-  max-width: 15rem;
+  object-position: 49.8% 93%;
+  max-width: 21rem;
+  margin: 0;
+}
+.mainpic img:hover {
+  opacity: 0.9;
 }
 .illustratore {
   display: grid;
@@ -279,29 +284,17 @@ main, .card  {
 }
 p.main {
   border: 1px solid rgb(0, 0, 0);
-  color:#000000;
+  color:#000;
   font-family: 'Montagu Slab', serif;
   font-size: 16px;
   font-weight: 500;
   margin: 0;
 }
-p.main:hover {
-  background-color: #000;
-  color: #fff;
-}
-.mainpic img {
-  object-fit: none;
-  object-position: 53% 92%;
-  max-height: 39.4rem;
-}
-.mainpic img:hover {
-  opacity: 0.9;
-}
 div.headline {
   background-color: #fff;
   border: none;
   display: grid;
-  padding: 5em;
+  padding: 3em;
 }
 h1.headline {
     color: #000;

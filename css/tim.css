@@ -282,15 +282,17 @@ h5.z {
 .card {
   display: grid;
   place-items: center;
+  margin: 0;
 }
 .pics {
   background-color: #dbe3c3;
   display: grid;
   place-items: center;
+  margin: 0;
 }
 .pics img {
   width: 100%;
-  padding: 3em 0 0 0;
+  padding: 3em 0 3em 0;
 }
 footer {
   background-color:#B2C47E;
