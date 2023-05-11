@@ -106,6 +106,7 @@ h3.about {
   padding: 4em;
 }
 p.ppl {
+  border: 1px solid red;
   font-family: 'Libre Franklin', sans-serif;
   font-size: 16px;
   font-weight: 500;

@@ -115,7 +115,7 @@ a:hover {
 }
 .herobox img {
   opacity: 40%;
-  max-height: 30em;
+  max-height: 30rem;
   object-fit: cover;
   width: 100%;
   margin: 0;
@@ -243,7 +243,7 @@ li.down {
 }
 /*_________________________________________________________________ 1 ___________________________________________________________________*/
 @media (max-width: 35em) {
-  .autore { 
+.autore { 
       width: 100%;
       display: grid;
       place-items: center end;
