@@ -90,7 +90,7 @@ text-decoration: none;
   position: relative; 
   z-index: 1;
   margin: 0;
-  padding: 1.5em;
+  padding: 1em;
 }  
 .subnav-content a:hover { /*bottone singolo illustratore al passaggio del mouse*/
   border-bottom: 4px solid #000000;
