@@ -60,7 +60,7 @@ text-decoration: none;
   font-size: 14px;
   font-weight: 500;
 }
-.subnav .subnavbtn { /*bottone voce 'illustratore' del nav menù*/
+.subnav .subnavbtn {/*bottone voce 'illustratore' del nav menù*/
   border: none;
   outline: none;
   padding: 1em 2em;
@@ -76,7 +76,7 @@ text-decoration: none;
 /*menù a tendina per selezionare gli illustratori disponibili*/
 .subnav-content {
  background-color: #e0e3c3c5;
- border-bottom: 1.5px solid #000000;
+ border-bottom: 1.5px solid #000;
  display: none;
  position: absolute;
  left: 0;

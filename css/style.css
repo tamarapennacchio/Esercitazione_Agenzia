@@ -1,4 +1,4 @@
-::-moz-selection { /* Code for Firefox */
+::-moz-selection { /*Code for Firefox */
   background: #7EC489;
 }
 ::selection {
@@ -90,7 +90,7 @@ text-decoration: none;
   position: relative; 
   z-index: 1;
   margin: 0;
-  padding: 1em;
+  padding: 1.5em;
 }  
 .subnav-content a:hover { /*bottone singolo illustratore al passaggio del mouse*/
   border-bottom: 4px solid #000000;
@@ -270,8 +270,8 @@ main, .card  {
 }
 .mainpic img {
   object-fit: none;
-  object-position: 49.8% 93%;
-  max-width: 21rem;
+  object-position: 49.6% 92.5%;
+  max-width: 13rem;
   margin: 0;
 }
 .mainpic img:hover {
