@@ -147,12 +147,6 @@ h1.headline {
   margin: 0;
   max-width: 60rem;
 }
-h1, .h1 {
-  font-size: 4.26666667em;
-  line-height: 1.0625em;
-  margin-top: 0.265625em;
-  margin-bottom: 0.53125em;
-}
 h4 {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 1em;
@@ -252,83 +246,86 @@ li.down {
   font-weight: 500;
 }
 /*_________________________________________________________________ 1 ___________________________________________________________________*/
-/*@media (max-width: 35em) { 
+@media (max-width: 35em) { 
+.trademark {
+    display: grid;
+    justify-content: start;
+    position: absolute;
+    z-index: 1;
+  }
+  .marchio {
+    max-width: 3rem;
+    padding: 5em 0 0 5em;  
+  }
   .subnav-content a {
   border: none;
   text-decoration: none;
   position: relative; 
   z-index: 1;
-  margin: 0.3em;
-  padding: 0.3em;
+  margin: 1em;
+  padding: 1em;
 }
-.card {
-  padding: 8em 1em 0 1em;
-  display: grid;
-  place-items: center;
-}
-.contentpics img {
-  object-fit: none; 
-}
-main, .card  {
-  background-color: #e0e3c3;
-  max-width: 500px;
-}
-.contentpics {
-  max-width: 1000px;
-}
-.contentpics img {margin: 0 0 5em 0;}
 /*_______________________________________________________________________________________________________________________________________*/
-/*.heropic {
-  background-color: #ffffff;
+.heropic {
   display: grid;
   place-items: end;
-  padding: 0;
   cursor: pointer;
 }
+/*_______________________________________________________________________________________________________________________________________*/
 .mainpic img {
   object-fit: none;
   object-position: 49.6% 92.5%;
-  max-width: 13rem;
+  max-width: 21rem;
+  max-height: 21rem;
   margin: 0;
 }
 .mainpic img:hover {
   opacity: 0.9;
 }
-.illustratore {
-  display: grid;
-  place-items: start;
-  padding: 1em 1em 1em 0;
-}
-p.main {
-  border: 1px solid rgb(0, 0, 0);
-  color:#000;
-  font-family: 'Montagu Slab', serif;
-  font-size: 16px;
-  font-weight: 500;
-  margin: 0;
-}
+/*_______________________________________________________________________________________________________________________________________*/
 div.headline {
-  background-color: #fff;
-  border: none;
+  background-color: #7EC489;
+  border-top: 1.5px solid #000;
+  border-bottom: 1.5px solid #000;
   display: grid;
+  place-items: center;
   padding: 3em;
 }
-h1.headline {
-    color: #000;
-    font-family: 'Montagu Slab', serif;
-    font-size: 24px;
-    font-weight: 600;
-    margin: 0;
-}
-h4 {
-  font-family: 'Libre Franklin', sans-serif;
-  font-size: 16px;
+h1.headline { /*like h3*/
+  color: #000;
+  font-family: 'Montagu Slab', serif;
+  font-size: 1.6em;
+  line-height: 1.5em;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
   font-weight: 500;
-  line-height: 1.5;
-  margin: 1em 0 0 0;
+  margin: 0;
+  max-width: 34rem;
+}
+h4 { /*like p*/
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  margin-top: 0em;
+  margin-bottom: 1.2em;
+}
 }
 /*_______________________________________________________________________________________________________________________________________*/
-/*footer {background-color:#B2C47E;}
+.card {
+  max-width: 21rem;
+  margin: 3em;
+}
+.card img:hover {
+  opacity: 0.7;
+}
+.contentpics {
+  max-width: 100rem;
+  margin: 3em auto;
+  display: grid;
+  place-items: center;
+  gap: 8px;
+}
+/*_______________________________________________________________________________________________________________________________________*/
+footer {background-color:#B2C47E;}
 .footer {
   display: grid;
   place-items: start;
@@ -336,22 +333,24 @@ h4 {
 li.down {
   font-weight: 600;
 }
+/*_______________________________________________________________________________________________________________________________________*/
 a.freccina {
   color: black;
   background: #B2C47E;
-  border-radius: 15px;
-  margin: 0 -6px -2px 0;
-  padding: 8px;
+  border-radius: 20px;
+  padding: 1.3em 0.5em;
   text-decoration: none;
   position: fixed;
+  bottom: 5px;
+  right: 21px;
 }
 a.freccina:hover {
   border: 1.5px solid #000;
   color: rgb(0, 0, 0);
 }
-}*/
+}
 /*_________________________________________________________________ 2 ___________________________________________________________________*/
-/*@media (max-width: 35em) {
+@media (max-width: 35em) {
   .trademark {
     border-radius: 0 0 4px 0;
   }
@@ -359,9 +358,9 @@ a.freccina:hover {
     max-width: 4rem;
     padding: 6em 1em 1em 3em;  
   }
-}*/
+}
 /*_________________________________________________________________ 3 ___________________________________________________________________*/
-/*@media (min-width: 35em) {
+@media (min-width: 35em) {
   .trademark {
   border-radius: 0 0 4px 0;
 }
@@ -387,4 +386,4 @@ a.freccina:hover {
     max-width: 6rem;
     padding: 6em 1em 1em 9em;  
   }
-}*/
+}
