@@ -4,20 +4,24 @@
 ::selection {
   background: #7EC489;
 }
-body {
-    margin: 0;
-    scroll-behavior: smooth;
+html, .root {
+  font-size: 15px;
+  line-height: 18px;
+}
+body, .article {
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  max-width: 100%;
+  margin: 0 0;
+  scroll-behavior: smooth;
 }
 img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
 main {
-  max-width: 1000px;
-  margin: 0;
-}
-.pics img {
-  max-width: 700px;
+  max-width: 100%;
 }
 /*-------------------------------------------------------- T R A D E M A R K ------------------------------------------------------------*/
 .trademark {
@@ -33,8 +37,6 @@ main {
 /*-------------------------------------------------------- N A V  B A R -----------------------------------------------------------------*/
 .navbar { /*navigation menù*/
   border-bottom: 1.5px solid #000;
-  font-family: 'Libre Franklin', sans-serif;
-  font-size: 14px;
   font-weight: 500;
   display: flex;
   justify-content: end;
@@ -42,30 +44,33 @@ main {
   background-color: #B2C47E;
 }
 .navbar a { /*voce 'about' nav menù*/
+background-color: rgb(117, 117, 247);
 border: none;
 display: grid;
 grid-template-columns: 1fr;
 font-family: 'Libre Franklin', sans-serif;
-font-size: 14px;
-font-weight: 500;
 padding: 1em 2em;
 text-decoration: none;
 }
 .subnav { /*voci 'llustratori' e 'about' menù nav*/
+  background-color: orange;
   float: right;
   overflow: hidden;
 }
 .subnavbtn {
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 14px;
+  margin-top: 0em;
+  margin-bottom: 1.2em;
   font-weight: 500;
 }
-.subnav .subnavbtn { /*bottone voce 'illustratore' del nav menù*/
+.subnav .subnavbtn {/*bottone voce 'illustratore' del nav menù*/
+  font-family: 'Libre Franklin', sans-serif;
+  margin-top: 0em;
+  margin-bottom: 1.2em;
   border: none;
   outline: none;
   padding: 1em 2em;
   background-color: inherit;
-  font-family: inherit;
   margin: 0;
 }
 /*passaggio del mouse si accende il bottone del nav menù e voci del menù a tendina*/
@@ -76,7 +81,7 @@ text-decoration: none;
 /*menù a tendina per selezionare gli illustratori disponibili*/
 .subnav-content {
  background-color: #e0e3c3c5;
- border-bottom: 1.5px solid #000000;
+ border-bottom: 1.5px solid #000;
  display: none;
  position: absolute;
  left: 0;
@@ -95,56 +100,20 @@ text-decoration: none;
 .subnav-content a:hover { /*bottone singolo illustratore al passaggio del mouse*/
   border-bottom: 4px solid #000000;
   color: #7EC489;
+  font-weight: 700;
 }
 /*dimensione e disposizione menù a tendina con illustratori*/
 .subnav:hover .subnav-content {
   display: flex;
   justify-content: center;
-  
 }
+/*_______________________________________________________________________________________________________________________________________*/
 a {
   color: #000;
   text-decoration: none;
 }
 a:hover {
   color: #DBE3C3;
-}
-/*---------------------------------------------------------- H E R O  /  P I C ----------------------------------------------------------*/
-.hero {
-  max-width: 1000em;
-}
-.herobox img {
-  opacity: 40%;
-  max-height: 30rem;
-  object-fit: cover;
-  width: 100%;
-  margin: 0;
-}
-/*----------------------------------------------------- E V I D E N Z I A T O R E -------------------------------------------------------*/
-.sito:hover {
-  color: #000;
-}
-:root {
-    --link-color: #000;
-}
-.sito {
-    position: relative;
-    color: var(--link-color);
-    display: inline-block;
-}
-.sito:after {
-    position: absolute;
-    left: 0px;
-    background-color: var(--link-color);
-    content: '';
-    display: block;
-    height: 5px;
-    transition: width .7s;
-    width: 0;
-    margin: 5px 0 0 0;
-}
-.sito:hover:after {
-    width: 100%;
 }
 /*------------------------------------------------------- H E A D L I N E ---------------------------------------------------------------*/
 .autore {
@@ -159,16 +128,57 @@ a:hover {
 h2.name {
   color: #000;
   font-family: 'Montagu Slab', serif;
-  font-size: 40px;
+  font-size: 2.6em;
+  line-height: 1.38461538em;
+  margin-top: 0.46153846em;
+  margin-bottom: 0.46153846em;
   font-weight: 500;
   max-width: 11rem;
   margin: 0;
 }
 p.web {
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 14px;
+  margin-top: 0em;
+  margin-bottom: 1.2em;
   font-weight: 500;
   margin: 0;
+}
+/*---------------------------------------------------------- H E R O  /  P I C ----------------------------------------------------------*/
+.hero {
+  max-width: 100%;
+}
+.herobox img {
+  opacity: 40%;
+  max-height: 30em;
+  object-fit: cover;
+  width: 100%;
+  margin: 0;
+}
+/*----------------------------------------------------- E V I D E N Z I A T O R E -------------------------------------------------------*/
+.sito:hover {
+  color: #000;
+}
+:root {
+  --link-color: #000;
+}
+.sito {
+  position: relative;
+  color: var(--link-color);
+  display: inline-block;
+}
+.sito:after {
+  position: absolute;
+  left: 0px;
+  background-color: var(--link-color);
+  content: '';
+  display: block;
+  height: 5px;
+  transition: width .7s;
+  width: 0;
+  margin: 5px 0 0 0;
+}
+.sito:hover:after {
+  width: 100%;
 }
 /*----------------------------------------------------------- T E X T -------------------------------------------------------------------*/
 .about {
@@ -184,17 +194,17 @@ p.web {
 }
 h5.z {
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 16px;
+  font-size: 1em;
+  line-height: 1.2em;
+  margin-top: 1.2em;
+  margin-bottom: 0em;
   font-weight: 400;
-  line-height: 24px;
+  padding: 1em 0 0 0;
 }
 /*---------------------------------------------------------- M A I N --------------------------------------------------------------------*/
 .card {
   display: grid;
   place-items: center;
-}
-main, .card {
-  max-width: 1000em;
 }
 .pics {
   display: grid;
@@ -207,30 +217,28 @@ main, .card {
 }
 /*------------------------------------------------------ F R E C C I N A ----------------------------------------------------------------*/
 a.freccina {
-  color: black;
-  background: #ffffff;
+  color: #000;
+  background: #fff;
   border-radius: 20px;
-  padding: 8px;
+  padding: 1.3em 0.5em;
   text-decoration: none;
   position: fixed;
-  bottom: 7px;
-  right: 25px;
-  }
-a.freccina:hover {
-background-color: #fff;
-border: 1.5px solid #000;
-color: rgb(0, 0, 0);
+  bottom: 5px;
+  right: 21px;
 }
- /*-------------------------------------------------------- F O O T E R -----------------------------------------------------------------*/
- footer {
+a.freccina:hover {
+  background-color: #fff;
+  border: 1.5px solid #000;
+  color: #000;
+}
+/*--------------------------------------------------------- F O O T E R -----------------------------------------------------------------*/
+footer {
   background-color:#B2C47E;
   border-top: 1.5px solid #000;
   text-align: center;
 }
 .footer {
-  padding: 1rem 2rem;
-  min-height: 21px; 
-  max-height: 233px
+  padding: 1em 1em;
 }
 ul.down {
   list-style: none;
@@ -238,165 +246,174 @@ ul.down {
 }
 li.down {
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
+  margin-top: 0em;
+  margin-bottom: 1.2em;
+  text-align: center;
 }
 /*_________________________________________________________________ 1 ___________________________________________________________________*/
 @media (max-width: 35em) {
-  .autore { 
-      width: 100%;
-      display: grid;
-      place-items: center end;
-      position: absolute;
-      z-index: 1;
-      margin: 5em 0 0 -5em; /*ok*/
-      padding: 0;
-    }
-  h2.name {
-    color: #000;
-    font-family: 'Montagu Slab', serif;
-    font-size: 24px;
-    font-weight: 500;
-    max-width: 5rem;
-    margin: 0;
-  }
-  /*_______________________________________________________________________________________________________________________________________*/
-  .about {
-    background-color: #ffffff;
-    display: grid;
-    place-items: center;
-    margin: 0;
-  }
-  .text {
-    max-width: 34rem;
-    margin: 0;
-    padding: 0;
-  }
-  h5.z {
-    font-family: 'Libre Franklin', sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 24px;
-  }
-  /*_______________________________________________________________________________________________________________________________________*/
-  .card {
-    display: grid;
-    place-items: center;
-  }
-  .pics {
-    background-color: #dbe3c3;
-    display: grid;
-    place-items: center;
-  }
-  .pics img {
-    width: 100%;
-    padding: 3em 0 3em 0;
-  }
-  footer {
-    background-color:#B2C47E;
-    padding: 0;
-    border-top: 1.5px solid #000;
-    text-align: center;
-  }
-  ul.down {
-    list-style: none;
-    margin: 0;
-  }
-  .footer {
+.autore { 
+  max-width: 25rem;
+  display: grid;
+  place-items: center end;
+  position: absolute;
+  z-index: 1;
+  margin: 5em 0 0 0;
+}
+h2.name { /*like h4*/
+  color: #000;
+  font-family: 'Montagu Slab', serif;
+  font-size: 1em;
+  line-height: 1.2em;
+  margin-top: 1.2em;
+  margin-bottom: 0em;
+  font-weight: 500;
+  max-width: 5rem;
+  margin: 0;
+}
+/*_______________________________________________________________________________________________________________________________________*/
+.about {
+  background-color: #fff;
+  display: grid;
+  place-items: center;
+  margin: 0;
+}
+.text {
+  max-width: 34rem;
+  margin: 0;
+  padding: 0;
+}
+h5.z { /*like p*/
+  font-family: 'Libre Franklin', sans-serif;
+  margin-top: 0em;
+  margin-bottom: 1.2em;
+  font-weight: 300;
+}
+/*_______________________________________________________________________________________________________________________________________*/
+.card {
+  display: grid;
+  place-items: center;
+}
+.pics {
+  background-color: #dbe3c3;
+  display: grid;
+  place-items: center;
+}
+.pics img {
+  width: 60%;
+  padding: 3em 0 3em 0;
+}
+/*_______________________________________________________________________________________________________________________________________*/
+footer {
+  background-color:#B2C47E;
+  padding: 0;
+  border-top: 1.5px solid #000;
+  text-align: center;
+}
+ul.down {
+  list-style: none;
+  margin: 0;
+}
+.footer {
   display: grid;
   place-items: start;
-  }
-  li.down {
+}
+li.down {
   font-weight: 600;
-  }
-  }
-  /*_________________________________________________________________ 2 ___________________________________________________________________*/
-  @media (max-width: 35em) {
-    .trademark {
-      border-radius: 0 0 4px 0;
-    }
-    .marchio {
-      max-width: 2rem;
-      padding: 6em 1em 1em 3em;  
-    }
-    .autore {
-      width: 100%;
-      display: grid;
-      place-items: center end;
-      position: absolute;
-      z-index: 1;
-      padding: 0;
-    }
-  h2.name {
-    color: #000;
-    font-family: 'Montagu Slab', serif;
-    font-size: 24px;
-    font-weight: 500;
-    max-width: 5rem;
-    margin: 0;
-  }
-  }
-  /*_________________________________________________________________ 3 ___________________________________________________________________*/
-  @media (min-width: 35em) {
-    .trademark {
-    border-radius: 0 0 4px 0;
-  }
-    .marchio {
-      max-width: 3rem;
-      padding: 6em 1em 1em 3em;  
-  }
-  .autore {
-    width: 100%;
-    display: grid;
-    place-items: center end;
-    position: absolute;
-    z-index: 1;
-    margin: 8em 0 0 -6em; /*ok*/
-    padding: 0;
-  }
-  h2.name {
+}
+}
+/*_________________________________________________________________ 2 ___________________________________________________________________*/
+@media (max-width: 35em) {
+.trademark {
+  border-radius: 0 0 4px 0;
+}
+.marchio {
+  max-width: 2rem;
+  padding: 6em 1em 1em 3em;  
+}
+.autore {
+  width: 100%;
+  display: grid;
+  place-items: center end;
+  position: absolute;
+  z-index: 1;
+  padding: 0;
+}
+h2.name { /*like h4*/
   color: #000;
   font-family: 'Montagu Slab', serif;
-  font-size: 24px;
+  font-size: 1em;
+  line-height: 1.2em;
+  margin-top: 1.2em;
+  margin-bottom: 0em;
   font-weight: 500;
   max-width: 5rem;
   margin: 0;
-  }
-  }
-  /*_________________________________________________________________ 4 ___________________________________________________________________*/
-  @media (min-width: 50em) {
-    .trademark {
-      border-radius: 0 0 4px 0;
-  }
-    .marchio {
-      max-width: 4.5rem;
-      padding: 6em 1em 1em 6em;  
-  }
-  .autore {
-    width: 100%;
-    display: grid;
-    place-items: center end;
-    position: absolute;
-    z-index: 1;
-    margin: 21em 0 0 -25em; /*ok*/
-    padding: 0;
-  }
-  h2.name {
+}
+}
+/*_________________________________________________________________ 3 ___________________________________________________________________*/
+@media (min-width: 35em) {
+.trademark {
+  border-radius: 0 0 4px 0;
+}
+.marchio {
+  max-width: 3rem;
+  padding: 6em 1em 1em 3em;  
+}
+autore {
+  width: 25rem;
+  display: grid;
+  place-items: center end;
+  position: absolute;
+  z-index: 1;
+  margin: 8em 0 0 0;
+}
+h2.name {
   color: #000;
   font-family: 'Montagu Slab', serif;
-  font-size: 24px;
+  font-size: 2.6em;
+  line-height: 1.38461538em;
+  margin-top: 0.46153846em;
+  margin-bottom: 0.46153846em;
   font-weight: 500;
   max-width: 5rem;
   margin: 0;
-  }
-  }
-  /*_________________________________________________________________ 5 ___________________________________________________________________*/
-  @media (min-width: 70em) {
-  .trademark {
-      border-radius: 0 0 4px 0;
-    }
-  .marchio {
-      max-width: 6rem;
-      padding: 6em 1em 1em 9em;  
-    }
-  }
+}
+}
+/*_________________________________________________________________ 4 ___________________________________________________________________*/
+@media (min-width: 50em) {
+.marchio {
+  max-width: 4.5rem;
+  padding: 6em 1em 1em 6em;  
+}
+.autore {
+  max-width: 25rem;
+  display: grid;
+  place-items: center end;
+  position: absolute;
+  z-index: 1;
+  margin: 15em 0 0 65rem;
+  padding: 0;
+}
+h2.name {
+  color: #000;
+  font-family: 'Montagu Slab', serif;
+  font-size: 2.6em;
+  line-height: 1.38461538em;
+  margin-top: 0.46153846em;
+  margin-bottom: 0.46153846em;
+  font-weight: 500;
+  max-width: 5rem;
+  margin: 0;
+}
+}
+/*_________________________________________________________________ 5 ___________________________________________________________________*/
+@media (min-width: 70em) {
+.trademark {
+  border-radius: 0 0 4px 0;
+}
+.marchio {
+  max-width: 6rem;
+  padding: 6em 1em 1em 9em;  
+}
+}
