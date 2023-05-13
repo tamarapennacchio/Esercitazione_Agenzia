@@ -14,6 +14,7 @@ body, .article {
   line-height: 18px;
   max-width: 100%;
   margin: 0 0;
+  scroll-behavior: smooth;
 }
 img {
   max-width: 100%;
@@ -34,7 +35,8 @@ img {
 .navbar { /*navigation menù*/
   border-bottom: 1.5px solid #000;
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 14px;
+  margin-top: 0em;
+  margin-bottom: 1.2em;
   font-weight: 500;
   display: flex;
   justify-content: end;
@@ -45,8 +47,6 @@ img {
   border: none;
   display: grid;
   grid-template-columns: 1fr;
-  font-family: 'Libre Franklin', sans-serif;
-  line-height: 0;
   padding: 1em 2em;
   text-decoration: none;
 }
@@ -61,6 +61,9 @@ img {
   font-weight: 500;
 }
 .subnav .subnavbtn { /*bottone voce 'illustratore' del nav menù*/
+  font-family: 'Libre Franklin', sans-serif;
+  margin-top: 0em;
+  margin-bottom: 1.2em;
   border: none;
   outline: none;
   padding: 1em 2em;
@@ -111,7 +114,7 @@ a {
 a:hover {
   color: #E0E3C3;
 }
-/*_______________________________________________________________________________________________________________________________________*/
+/*---------------------------------------------------------- H E R O  /  P I C ----------------------------------------------------------*/
 .heropic {
   display: grid;
   place-items: center;
@@ -211,7 +214,7 @@ p.main {
 }
 /*------------------------------------------------------ F R E C C I N A ----------------------------------------------------------------*/
 a.freccina {
-    color: black;
+    color: #000;
     background: #fff;
     border-radius: 20px;
     padding: 1.3em 0.5em;
@@ -223,7 +226,7 @@ a.freccina {
 a.freccina:hover {
   background-color: #fff;
   border: 1.5px solid #000;
-  color: rgb(0, 0, 0);
+  color: #000;
 }
 /*-------------------------------------------------------- F O O T E R -----------------------------------------------------------------*/
 footer {
@@ -242,8 +245,8 @@ ul.down {
 }
 li.down {
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
+  margin-top: 0em;
+  margin-bottom: 1.2em;
 }
 /*_________________________________________________________________ 1 ___________________________________________________________________*/
 @media (max-width: 35em) { 
@@ -261,7 +264,8 @@ li.down {
 .navbar { /*navigation menù*/
     border-bottom: 1.5px solid #000;
     font-family: 'Libre Franklin', sans-serif;
-    font-size: 14px;
+    margin-top: 0em;
+    margin-bottom: 1,2em;
     font-weight: 500;
     display: flex;
     justify-content: end;
@@ -304,7 +308,6 @@ li.down {
   /*menù a tendina per selezionare gli illustratori disponibili*/
   .subnav-content {
    background-color: #e0e3c3de;
-   border-bottom: 1.5px solid #000000;
    display: none;
    position: absolute;
    left: 0;
@@ -322,9 +325,9 @@ li.down {
     padding: 1em;
   }  
   .subnav-content a:hover { /*bottone singolo illustratore al passaggio del mouse*/
-    border-bottom: 4px solid #000000;
-    color: #7EC489;
-    font-weight: 500;
+    border-bottom: 4px solid #7EC489;
+    color: #000;
+    font-weight: 600;
   }
   /*dimensione e disposizione menù a tendina con illustratori*/
   .subnav:hover .subnav-content {
