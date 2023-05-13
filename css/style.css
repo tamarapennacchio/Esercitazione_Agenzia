@@ -257,14 +257,80 @@ li.down {
     max-width: 3rem;
     padding: 5em 0 0 5em;  
   }
+/*_______________________________________________________________________________________________________________________________________*/
+.navbar { /*navigation menù*/
+    border-bottom: 1.5px solid #000;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: end;
+    overflow:scroll;
+    background-color: #B2C47E;
+  }
+  .navbar a { /*voce 'about' nav menù*/ 
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Libre Franklin', sans-serif;
+    line-height: 0;
+    padding: 1em 2em;
+    text-decoration: none;
+  }
+  .subnav { /*voci 'llustratori' e 'about' menù nav*/
+    float: right;
+    overflow: hidden;
+  }
+  /*.subnavbtn {
+    font-family: 'Libre Franklin', sans-serif;
+    margin-top: 21em;
+    margin-bottom: 13em;
+    font-weight: 500;
+  }*/
+  .subnav .subnavbtn { /*bottone voce 'illustratore' del nav menù*/
+    border: none;
+    outline: none;
+    padding: 1em 2em;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  /*passaggio del mouse si accende il bottone del nav menù e voci del menù a tendina*/
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    margin: 0;
+    color:#E0E3C3;
+  }  
+  /*menù a tendina per selezionare gli illustratori disponibili*/
+  .subnav-content {
+   background-color: #e0e3c3de;
+   border-bottom: 1.5px solid #000000;
+   display: none;
+   position: absolute;
+   left: 0;
+   max-width: 13rem;
+   z-index: 2;
+   margin: 0 8em;
+  }  
+  /*link del menù a tendina*/
   .subnav-content a {
-  border: none;
-  text-decoration: none;
-  position: relative; 
-  z-index: 1;
-  margin: 1em;
-  padding: 1em;
-}
+    border: none;
+    text-decoration: none;
+    position: relative; 
+    z-index: 1;
+    margin: 0;
+    padding: 1em;
+  }  
+  .subnav-content a:hover { /*bottone singolo illustratore al passaggio del mouse*/
+    border-bottom: 4px solid #000000;
+    color: #7EC489;
+    font-weight: 500;
+  }
+  /*dimensione e disposizione menù a tendina con illustratori*/
+  .subnav:hover .subnav-content {
+    display: grid;
+    justify-content: center;
+  }
 /*_______________________________________________________________________________________________________________________________________*/
 .heropic {
   display: grid;
@@ -307,7 +373,6 @@ h4 { /*like p*/
   font-weight: 400;
   margin-top: 0em;
   margin-bottom: 1.2em;
-}
 }
 /*_______________________________________________________________________________________________________________________________________*/
 .card {
