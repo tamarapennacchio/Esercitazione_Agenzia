@@ -28,13 +28,18 @@ main {
   display: grid;
   justify-content: start;
   position: absolute;
-  z-index: 1;
+  z-index: -1;
 }
 .marchio {
   max-width: 6rem;
   padding: 8em 0 0 8em;  
 }
 /*-------------------------------------------------------- N A V  B A R -----------------------------------------------------------------*/
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
+}
 .navbar { /*navigation menù*/
   background-color: #D1E3C3;
   border-bottom: 1.5px solid #000;
@@ -120,6 +125,8 @@ a:hover {
   z-index: 1;
   margin: 0;
   padding: 13em 0 0 75em;
+  position: absolute;
+  z-index: -1;
 }
 h2.name {
   color: #000;
@@ -142,6 +149,8 @@ p.web {
 /*---------------------------------------------------------- H E R O  /  P I C ----------------------------------------------------------*/
 .hero {
   max-width: 100%;
+  position: relative;
+  z-index: -1;
 }
 .herobox img {
   opacity: 40%;

@@ -25,13 +25,18 @@ img {
   display: grid;
   justify-content: start;
   position: absolute;
-  z-index: 1;
+  z-index: -1;
 }
 .marchio {
   max-width: 6rem;
   padding: 8em 0 0 8em;  
 }
 /*------------------------------------------------ N A V / B A R ------------------------------------------------------------------------*/
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
+}
 .navbar { /*navigation menù*/
   background-color: #D1E3C3;
   border-bottom: 1.5px solid #000;
@@ -68,7 +73,7 @@ img {
 }
 /*menù a tendina per selezionare gli illustratori disponibili*/
 .subnav-content {
- background-color: #d1e3c34e;
+ background-color: #d1e3c3;
  border: 1px solid #000;
  display: none;
  position: absolute;
@@ -114,6 +119,8 @@ a:hover {
   display: grid;
   place-items: center;
   cursor: pointer;
+  position: relative;
+  z-index: -1;
 }
 .mainpic img {
   object-fit: none;
