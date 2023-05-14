@@ -4,6 +4,18 @@
 ::selection {
   background: #7EC489;
 }
+html, .root {
+  font-size: 15px;
+  line-height: 18px;
+}
+body, .article {
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  max-width: 100%;
+  margin: 0 0;
+  scroll-behavior: smooth;
+}
 body {
   margin: 0 0;
   scroll-behavior: smooth;
@@ -43,12 +55,14 @@ ul.up {
 }
 li.up {
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 14px;
+  margin-top: 0em;
+  margin-bottom: 1.2em;
   font-weight: 500;
   display: inline-block;
   padding: 1em 2em;
 }
 a {
+  line-height: 0;
   color: #000;
   text-decoration: none;
 }
@@ -74,7 +88,9 @@ section.box {
 }
 h3.about {
   font-family: 'Montagu Slab', serif;
-  font-size: 24px;
+  font-size: 1.6em;
+  margin-top: 0.75em;
+  margin-bottom: 0em;
   font-weight: 500;
   line-height: 28.8px;
   max-width: 45rem;
@@ -108,7 +124,8 @@ h3.about {
 }
 p.ppl {
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 16px;
+  margin-top: 0em;
+  margin-bottom: 1.2em;
   font-weight: 500;
   line-height: 33.6px;
   margin: 0;
@@ -167,7 +184,8 @@ ul.down {
 }
 li.down {
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 14px;
+  margin-top: 0em;
+  margin-bottom: 1.2em;
   font-weight: 500;
 }
 /*_________________________________________________________________ 1 ___________________________________________________________________*/

@@ -4,7 +4,15 @@
 ::selection {
   background: #7EC489;
 }
-body {
+html, .root {
+  font-size: 15px;
+  line-height: 18px;
+}
+body, .article {
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  max-width: 100%;
   margin: 0 0;
   scroll-behavior: smooth;
 }
@@ -13,6 +21,7 @@ img {
   display: block;
 }
 main {
+  max-width: 100%;
   margin: 0;
 }
 /*---------------------------------------------- T R A D E M A R K ---------------------------------------------------------------------*/
@@ -43,12 +52,14 @@ ul.up {
 }
 li.up {
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 14px;
+  margin-top: 0em;
+  margin-bottom: 1.2em;
   font-weight: 500;
   display: inline-block;
   padding: 1em 2em;
 }
 a {
+  line-height: 0;
   color: #000;
   text-decoration: none;
 }
@@ -71,16 +82,18 @@ div.nastro {
 }
 h2 {
     font-family: 'Montagu Slab', serif;
-    font-size: 48px;
+    font-size: 2.6em;
+    line-height: 1.38461538em;
+    margin-top: 0.46153846em;
+    margin-bottom: 0.46153846em;
     font-weight: 500;
     margin: 0;
 }
 p {
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 16px;
+  margin-top: 0em;
+  margin-bottom: 1.2em;
   font-weight: 400;
-  line-height: 1.5;
-  margin: 1em 0 0 0;
 }
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
 .recapiti {
@@ -99,7 +112,8 @@ p {
 }
 .via, .mail, .tel {
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 16px;
+  margin-top: 0em;
+  margin-bottom: 1.2em;
   font-weight: 400;
 }
 /*------------------------------------------------- F O R M  /  C O N T A C T -----------------------------------------------------------*/
@@ -118,7 +132,8 @@ p {
 /* Add styles to 'label' selector */
 label {
   font-family: 'Libre Franklin', sans-serif;
-	font-size: 14px;
+	margin-top: 0em;
+  margin-bottom: 1.2em;
   font-weight: 500;
 }
 /* Add styles to 'input' and 'textarea' selectors */
@@ -135,7 +150,8 @@ input[type=text], input[type=email], textarea {
 input[type=text]:focus, input[type=email]:focus, textarea:focus {
 	border-bottom: 5px solid #7EC489;
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 14px;
+  margin-top: 0em;
+  margin-bottom: 1.2em;
   font-weight: 500;
 }
 /* style button */
@@ -143,9 +159,9 @@ input[type=submit] {
   background-color: #D1E3C3;
   border: 3px solid #000;
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 14px;
+  margin-top: 0em;
+  margin-bottom: 1.2rem;
   font-weight: 600;
-	margin: 1em auto;
 	outline: 0;
 	color: #000000;
 	padding: 0.5em 1em;
@@ -197,7 +213,8 @@ ul.down {
 }
 li.down {
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 14px;
+  margin-top: 0em;
+  margin-bottom: 1.2em;
   font-weight: 500;
 }
 /*_________________________________________________________________ 1 ___________________________________________________________________*/
