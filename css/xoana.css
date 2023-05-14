@@ -36,6 +36,7 @@ main {
 }
 /*-------------------------------------------------------- N A V  B A R -----------------------------------------------------------------*/
 .navbar { /*navigation menù*/
+  background-color: #D1E3C3;
   border-bottom: 1.5px solid #000;
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 500;
@@ -43,8 +44,6 @@ main {
   align-items: center;
   justify-content: end;
   overflow:scroll;
-  background-color: #B2C47E;
-  /*padding: 0.5em 1em;*/
 }
 .navbar a { /*voce 'about' nav menù*/ 
   border: none;
@@ -53,7 +52,6 @@ main {
   justify-content: center;
   font-family: 'Libre Franklin', sans-serif;
   line-height: 0;
-  /*padding: 1em 2em;*/
   text-decoration: none;
 }
 .subnavbtn {
@@ -73,6 +71,7 @@ main {
 }
 /*menù a tendina per selezionare gli illustratori disponibili*/
 .subnav-content {
+  background-color: #D1E3C3;
  border: 1px solid #000;
  display: none;
  position: absolute;
@@ -214,15 +213,15 @@ h5.z {
 }
 /*------------------------------------------------------ F R E C C I N A ----------------------------------------------------------------*/
 a.freccina {
-  color: #000;
-  background: #fff;
-  border-radius: 20px;
-  padding: 1.3em 0.5em;
-  text-decoration: none;
-  position: fixed;
-  bottom: 5px;
-  right: 21px;
-}
+  background-color: #E0E3C3;
+    color: #000;
+    border-radius: 20px;
+    padding: 0.2em 0.5em;
+    text-decoration: none;
+    position: fixed;
+    bottom: 8px;
+    right: 21px;
+    }
 a.freccina:hover {
   background-color: #fff;
   border: 1.5px solid #000;
@@ -233,9 +232,7 @@ footer {
   background-color:#B2C47E;
   border-top: 1.5px solid #000;
   text-align: center;
-}
-.footer {
-  padding: 1em 1em;
+  padding: 1em;
 }
 ul.down {
   list-style: none;
@@ -245,19 +242,19 @@ li.down {
   font-family: 'Libre Franklin', sans-serif;
   margin-top: 0em;
   margin-bottom: 1.2em;
-  text-align: center;
+  margin: 0;
 }
 /*_________________________________________________________________ 1 ___________________________________________________________________*/
-@media (max-width: 35em) {
+@media (max-width: 35em) { 
 .navbar { /*navigation menù*/
-    border-bottom: 1.5px solid #000;
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    overflow:scroll;
-    background-color: #B2C47E;
+  background-color: #D1E3C3;
+  border-bottom: 1.5px solid #000;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  overflow:scroll;
 }
 .navbar a { /*voce 'about' nav menù*/ 
   border: none;
@@ -287,42 +284,44 @@ li.down {
   font-family: inherit;
   margin: 0;
 }
-  /*passaggio del mouse si accende il bottone del nav menù e voci del menù a tendina*/
-  .navbar a:hover, .subnav:hover .subnavbtn {
-    margin: 0;
-    color:#E0E3C3;
-  }  
-  /*menù a tendina per selezionare gli illustratori disponibili*/
-  .subnav-content {
-   background-color: #e0e3c3de;
-   display: none;
-   position: absolute;
-   left: 0;
-   max-width: 13rem;
-   z-index: 2;
-   margin: 1em 0 8em 13em
-  }  
-  /*link del menù a tendina*/
-  .subnav-content a {
-    border: none;
-    text-decoration: none;
-    position: relative; 
-    z-index: 1;
-    margin: 0;
-    padding: 1em;
-  }  
-  .subnav-content a:hover { /*bottone singolo illustratore al passaggio del mouse*/
-    border-bottom: 4px solid #7EC489;
-    color: #000;
-    font-weight: 600;
-  }
-  /*dimensione e disposizione menù a tendina con illustratori*/
-  .subnav:hover .subnav-content {
-    display: grid;
-    justify-content: center;
-  }
+/*passaggio del mouse si accende il bottone del nav menù e voci del menù a tendina*/
+.navbar a:hover, .subnav:hover .subnavbtn {
+  margin: 0;
+  color:#7EC489;
+  font-weight: 500;
+}  
+/*menù a tendina per selezionare gli illustratori disponibili*/
+.subnav-content {
+  background-color: #D1E3C3;
+  display: none;
+  position: absolute;
+  left: 0;
+  max-width: 13rem;
+  z-index: 2;
+  margin: 1em 0 8em 13em
+}  
+/*link del menù a tendina*/
+.subnav-content a {
+  border: none;
+  text-decoration: none;
+  position: relative; 
+  z-index: 1;
+  margin: 0;
+  padding: 1em;
+}  
+.subnav-content a:hover { /*bottone singolo illustratore al passaggio del mouse*/
+  background-color: #B2C47E;
+  border: none;
+  color: #000;
+  font-weight: 500;
+}
+/*dimensione e disposizione menù a tendina con illustratori*/
+.subnav:hover .subnav-content {
+  display: grid;
+  justify-content: center;
+}
 /*_______________________________________________________________________________________________________________________________________*/  
-  .autore { 
+.autore { 
   max-width: 25rem;
   display: grid;
   place-items: center end;
@@ -374,22 +373,28 @@ h5.z { /*like p*/
   padding: 3em 0 3em 0;
 }
 /*_______________________________________________________________________________________________________________________________________*/
-footer {
-  background-color:#B2C47E;
-  padding: 0;
-  border-top: 1.5px solid #000;
-  text-align: center;
-}
-ul.down {
-  list-style: none;
-  margin: 0;
-}
+footer {background-color:#B2C47E;}
 .footer {
   display: grid;
   place-items: start;
 }
 li.down {
   font-weight: 600;
+}
+/*_______________________________________________________________________________________________________________________________________*/
+a.freccina {
+  color: black;
+  background: #B2C47E;
+  border-radius: 20px;
+  padding: 0.2em 0.5em;
+  text-decoration: none;
+  position: fixed;
+  bottom: 13px;
+  right: 21px;
+}
+a.freccina:hover {
+  border: 1.5px solid #000;
+  color: rgb(0, 0, 0);
 }
 }
 /*_________________________________________________________________ 2 ___________________________________________________________________*/

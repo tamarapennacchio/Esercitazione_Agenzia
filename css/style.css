@@ -33,6 +33,7 @@ img {
 }
 /*------------------------------------------------ N A V / B A R ------------------------------------------------------------------------*/
 .navbar { /*navigation menù*/
+  background-color: #D1E3C3;
   border-bottom: 1.5px solid #000;
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 500;
@@ -40,7 +41,6 @@ img {
   align-items: center;
   justify-content: end;
   overflow:scroll;
-  background-color: #B2C47E;
 }
 .navbar a { /*voce 'about' nav menù*/ 
   border: none;
@@ -68,6 +68,7 @@ img {
 }
 /*menù a tendina per selezionare gli illustratori disponibili*/
 .subnav-content {
+ background-color: #d1e3c34e;
  border: 1px solid #000;
  display: none;
  position: absolute;
@@ -117,7 +118,7 @@ a:hover {
 .mainpic img {
   object-fit: none;
   object-position: 53% 91.5%;
-  width: 70rem;
+  width: 67.9rem;
   height: 34rem;
   margin: 0 0 5em 0;
 }
@@ -208,13 +209,13 @@ p.main {
 }
 /*------------------------------------------------------ F R E C C I N A ----------------------------------------------------------------*/
 a.freccina {
+  background-color: #7EC489;
     color: #000;
-    background: #fff;
     border-radius: 20px;
-    padding: 1.3em 0.5em;
+    padding: 0.8em 0.5em;
     text-decoration: none;
     position: fixed;
-    bottom: 5px;
+    bottom: 8px;
     right: 21px;
     }
 a.freccina:hover {
@@ -227,17 +228,17 @@ footer {
   background-color:#B2C47E;
   border-top: 1.5px solid #000;
   text-align: center;
-}
-.footer {
   padding: 1em;
 }
 ul.down {
   list-style: none;
+  margin: 0;
 }
 li.down {
   font-family: 'Libre Franklin', sans-serif;
   margin-top: 0em;
   margin-bottom: 1.2em;
+  margin: 0;
 }
 /*_________________________________________________________________ 1 ___________________________________________________________________*/
 @media (max-width: 35em) { 
@@ -251,17 +252,17 @@ li.down {
     max-width: 3rem;
     padding: 5em 0 0 5em;  
   }
-/*_______________________________________________________________________________________________________________________________________*/
-.navbar { /*navigation menù*/
-    border-bottom: 1.5px solid #000;
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    overflow:scroll;
-    background-color: #B2C47E;
-}
+  /*_______________________________________________________________________________________________________________________________________*/
+  .navbar { /*navigation menù*/
+    background-color: #D1E3C3;
+      border-bottom: 1.5px solid #000;
+      font-family: 'Libre Franklin', sans-serif;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      overflow:scroll;
+  }
 .navbar a { /*voce 'about' nav menù*/ 
   border: none;
   display: flex;
@@ -293,18 +294,19 @@ li.down {
   /*passaggio del mouse si accende il bottone del nav menù e voci del menù a tendina*/
   .navbar a:hover, .subnav:hover .subnavbtn {
     margin: 0;
-    color:#E0E3C3;
+    color:#7EC489;
+    font-weight: 500;
   }  
-  /*menù a tendina per selezionare gli illustratori disponibili*/
-  .subnav-content {
-   background-color: #e0e3c3de;
-   display: none;
-   position: absolute;
-   left: 0;
-   max-width: 13rem;
-   z-index: 2;
-   margin: 1em 0 8em 13em
-  }  
+/*menù a tendina per selezionare gli illustratori disponibili*/
+.subnav-content {
+  background-color: #d1e3c3;
+  display: none;
+  position: absolute;
+  left: 0;
+  max-width: 13rem;
+  z-index: 2;
+  margin: 1em 0 8em 13em
+}  
   /*link del menù a tendina*/
   .subnav-content a {
     border: none;
@@ -315,9 +317,10 @@ li.down {
     padding: 1em;
   }  
   .subnav-content a:hover { /*bottone singolo illustratore al passaggio del mouse*/
-    border-bottom: 4px solid #7EC489;
+    background-color: #7EC489;
+    border: none;
     color: #000;
-    font-weight: 600;
+    font-weight: 500;
   }
   /*dimensione e disposizione menù a tendina con illustratori*/
   .subnav:hover .subnav-content {
@@ -396,10 +399,10 @@ a.freccina {
   color: black;
   background: #B2C47E;
   border-radius: 20px;
-  padding: 1.3em 0.5em;
+  padding: 0.8em 0.5em;
   text-decoration: none;
   position: fixed;
-  bottom: 5px;
+  bottom: 13px;
   right: 21px;
 }
 a.freccina:hover {

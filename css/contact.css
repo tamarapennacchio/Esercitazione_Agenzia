@@ -182,30 +182,26 @@ input[type=submit]:hover {
 }
 /*---------------------------------------------------- F R E C C I N A ------------------------------------------------------------------*/
 a.freccina {
-  color: black;
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 8px;
-  text-decoration: none;
-  position: fixed;
-  bottom: 7px;
-  right: 25px;
-  }
+  background-color: #B2C47E;
+    color: #000;
+    border-radius: 20px;
+    padding: 0.8em 0.5em;
+    text-decoration: none;
+    position: fixed;
+    bottom: 8px;
+    right: 21px;
+    }
 a.freccina:hover {
-background-color: #fff;
-border: 1.5px solid #000;
-color: rgb(0, 0, 0);
+  background-color: #fff;
+  border: 1.5px solid #000;
+  color: #000;
 }
 /*---------------------------------------------------- F O O T E R ----------------------------------------------------------------------*/
 footer {
   background-color:#B2C47E;
   border-top: 1.5px solid #000;
   text-align: center;
-}
-.footer {
-  padding: 1rem 2rem;
-  min-height: 21px; 
-  max-height: 233px
+  padding: 1em;
 }
 ul.down {
   list-style: none;
@@ -215,7 +211,7 @@ li.down {
   font-family: 'Libre Franklin', sans-serif;
   margin-top: 0em;
   margin-bottom: 1.2em;
-  font-weight: 500;
+  margin: 0;
 }
 /*_________________________________________________________________ 1 ___________________________________________________________________*/
 @media (max-width: 35em) {
@@ -236,22 +232,29 @@ li.down {
   margin-bottom: 1.2em;
   font-weight: 400;
 }
-footer {
-  background-color:#B2C47E;
-  padding: 0;
-  border-top: 1.5px solid #000;
-  text-align: center;
-}
-ul.down {
-  list-style: none;
-  margin: 0;
-}
+/*_______________________________________________________________________________________________________________________________________*/
+footer {background-color:#B2C47E;}
 .footer {
   display: grid;
   place-items: start;
 }
 li.down {
   font-weight: 600;
+}
+/*_______________________________________________________________________________________________________________________________________*/
+a.freccina {
+  color: black;
+  background: #B2C47E;
+  border-radius: 20px;
+  padding: 0.8em 0.5em;
+  text-decoration: none;
+  position: fixed;
+  bottom: 13px;
+  right: 21px;
+}
+a.freccina:hover {
+  border: 1.5px solid #000;
+  color: rgb(0, 0, 0);
 }
 }
 /*_________________________________________________________________ 2 ___________________________________________________________________*/
