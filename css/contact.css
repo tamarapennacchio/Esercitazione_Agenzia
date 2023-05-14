@@ -219,23 +219,24 @@ li.down {
 }
 /*_________________________________________________________________ 1 ___________________________________________________________________*/
 @media (max-width: 35em) {
-  .recapiti {
-    display: grid;
-    place-items: center;
-    gap: 3em;
-  }
-  .recapiti p {
-    margin: 0;
-  }
-  .viabold {
-    font-weight: 800;
-  }
-  .via, .mail, .tel {
-    font-family: 'Libre Franklin', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-  }
-  footer {
+.recapiti {
+  display: grid;
+  place-items: center;
+  gap: 3em;
+}
+.recapiti p {
+  margin: 0;
+}
+.viabold {
+  font-weight: 800;
+}
+.via, .mail, .tel {
+  font-family: 'Libre Franklin', sans-serif;
+  margin-top: 0em;
+  margin-bottom: 1.2em;
+  font-weight: 400;
+}
+footer {
   background-color:#B2C47E;
   padding: 0;
   border-top: 1.5px solid #000;
@@ -246,48 +247,48 @@ ul.down {
   margin: 0;
 }
 .footer {
-display: grid;
-place-items: start;
+  display: grid;
+  place-items: start;
 }
 li.down {
-font-weight: 600;
+  font-weight: 600;
 }
 }
 /*_________________________________________________________________ 2 ___________________________________________________________________*/
 @media (max-width: 35em) {
-  .trademark {
-    border-radius: 0 0 4px 0;
-  }
-  .marchio {
-    max-width: 2rem;
-    padding: 6em 1em 1em 3em;  
-  }
+.trademark {
+  border-radius: 0 0 4px 0;
+}
+.marchio {
+  max-width: 2rem;
+  padding: 6em 1em 1em 3em;  
+}
 }
 /*_________________________________________________________________ 3 ___________________________________________________________________*/
 @media (min-width: 35em) {
-  .trademark {
+.trademark {
   border-radius: 0 0 4px 0;
 }
-  .marchio {
-    max-width: 3rem;
-    padding: 6em 1em 1em 3em;  
+.marchio {
+  max-width: 3rem;
+  padding: 6em 1em 1em 3em;  
 }
 }
 @media (min-width: 50em) {
-  .trademark {
-    border-radius: 0 0 4px 0;
+.trademark {
+  border-radius: 0 0 4px 0;
 }
-  .marchio {
-    max-width: 4.5rem;
-    padding: 6em 1em 1em 6em;  
+.marchio {
+  max-width: 4.5rem;
+  padding: 6em 1em 1em 6em;  
 }
 }
 @media (min-width: 70em) {
-  .trademark {
-    border-radius: 0 0 4px 0;
-  }
-  .marchio {
-    max-width: 6rem;
-    padding: 6em 1em 1em 9em;  
-  }
+.trademark {
+  border-radius: 0 0 4px 0;
+}
+.marchio {
+  max-width: 6rem;
+  padding: 6em 1em 1em 9em;  
+}
 }
