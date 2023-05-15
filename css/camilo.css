@@ -28,13 +28,18 @@ main {
   display: grid;
   justify-content: start;
   position: absolute;
-  z-index: 1;
+  z-index: -1;
 }
 .marchio {
   max-width: 6rem;
   padding: 8em 0 0 8em;  
 }
 /*-------------------------------------------------------- N A V  B A R -----------------------------------------------------------------*/
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
+}
 .navbar { /*navigation menù*/
   background-color: #D1E3C3;
   border-bottom: 1.5px solid #000;
@@ -55,10 +60,10 @@ main {
   text-decoration: none;
 }
 .subnavbtn {
-  background-color: rgb(59, 154, 232);
   border: none;
   font-family: 'Libre Franklin', sans-serif;
   line-height: 0;
+  font-weight: 500;
   padding: 1em;
   text-decoration: none;
 }
@@ -71,7 +76,7 @@ main {
 }
 /*menù a tendina per selezionare gli illustratori disponibili*/
 .subnav-content {
-  background-color: #D1E3C3;
+  background-color: #fff;
  border: 1px solid #000;
  display: none;
  position: absolute;
@@ -142,6 +147,8 @@ p.web {
 /*---------------------------------------------------------- H E R O  /  P I C ----------------------------------------------------------*/
 .hero {
   max-width: 100%;
+  position: relative;
+  z-index: -1;
 }
 .herobox img {
   opacity: 40%;
