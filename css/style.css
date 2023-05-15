@@ -37,7 +37,8 @@ header {
   position: sticky;
   top:0;
 }
-.navbar { /*navigation menù*/
+/*navigation menù*/
+.navbar { 
   background-color: #D1E3C3;
   border-bottom: 1.5px solid #000;
   font-family: 'Libre Franklin', sans-serif;
@@ -47,7 +48,8 @@ header {
   justify-content: end;
   overflow:scroll;
 }
-.navbar a { /*voce 'about' nav menù*/ 
+/*voce 'about' nav menù*/ 
+.navbar a { 
   border: none;
   display: flex;
   align-items: center;
@@ -55,25 +57,27 @@ header {
   font-family: 'Libre Franklin', sans-serif;
   line-height: 0;
   text-decoration: none;
+  padding: 1em;
+  margin: 0;
 }
 .subnavbtn {
-  background-color: rgb(59, 154, 232);
   border: none;
   font-family: 'Libre Franklin', sans-serif;
   line-height: 0;
-  padding: 1em;
+  background-color: #d1e3c3;
   text-decoration: none;
+  margin: 1em;
 }
-.subnav { /*bottone voce 'illustratore' del nav menù*/
+/*bottone voce 'illustratore' del nav menù*/
+.subnav { 
   outline: none;
-  margin: 0;
   line-height: 0;
   border: none;
   padding: 1em;
 }
 /*menù a tendina per selezionare gli illustratori disponibili*/
 .subnav-content {
- background-color: #d1e3c3;
+ background-color: #fff;
  border: 1px solid #000;
  display: none;
  position: absolute;
@@ -92,7 +96,8 @@ header {
   margin: 0.5em;
   padding: 1em 0.5em;
 }  
-.subnav-content a:hover { /*bottone singolo illustratore al passaggio del mouse*/
+/*bottone singolo illustratore al passaggio del mouse*/
+.subnav-content a:hover { 
   border-bottom: 6px solid #000;
   color: #7EC489;
   max-width: 7rem;
@@ -178,17 +183,12 @@ h4 {
   gap: 21px;
 }
 p.main {
-  background-color: #e0e3c3;
-  border: 1px solid #000;
-  border-radius: 30px;
-  padding: 0.3em 1em;
+  background-color: #d1e3c3;
   font-family: 'Montagu Slab', serif;
-  text-align: center;
-  margin-top: 0em;
-  margin-bottom: 1.2em;
   font-weight: 500;
   margin: 0 0 1em 0;
-  width: 5em;
+  width: 15em;
+  height: 1em;
 }
 .karlotta {
   object-fit: none;
@@ -392,6 +392,9 @@ h4 { /*like p*/
   place-items: center;
   gap: 8px;
 }
+p.main {
+  width: 21em;
+} 
 /*_______________________________________________________________________________________________________________________________________*/
 footer {background-color:#B2C47E;}
 .footer {
