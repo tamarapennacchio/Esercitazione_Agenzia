@@ -12,7 +12,7 @@ body, .article {
   font-family: sans-serif;
   font-size: 15px;
   line-height: 18px;
-  max-width: 100%;
+ max-width: 100%;
   margin: 0 0;
   scroll-behavior: smooth;
 }
@@ -37,79 +37,56 @@ header {
   position: sticky;
   top:0;
 }
-/*navigation menù*/
-.navbar { 
-  background-color: #D1E3C3;
-  border-bottom: 1.5px solid #000;
-  font-family: 'Libre Franklin', sans-serif;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  overflow:scroll;
-}
-/*voce 'about' nav menù*/ 
-.navbar a { 
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Libre Franklin', sans-serif;
-  line-height: 0;
-  text-decoration: none;
-  padding: 1em;
-  margin: 0;
-}
-.subnavbtn {
-  border: none;
-  font-family: 'Libre Franklin', sans-serif;
-  line-height: 0;
-  background-color: #d1e3c3;
-  text-decoration: none;
-  margin: 1em;
-}
-/*bottone voce 'illustratore' del nav menù*/
-.subnav { 
-  outline: none;
-  line-height: 0;
-  border: none;
-  padding: 1em;
-}
-/*menù a tendina per selezionare gli illustratori disponibili*/
-.subnav-content {
- background-color: #fff;
- border: 1px solid #000;
- display: none;
- position: absolute;
- left: 0;
- z-index: 2;
- margin: 1em 0 0 85em;
- padding: 3em;
- max-width: 21rem;
-}  
-/*link del menù a tendina*/
-.subnav-content a {
-  border: none;
-  text-decoration: none;
-  position: relative; 
-  z-index: 1;
-  margin: 0.5em;
-  padding: 1em 0.5em;
-}  
-/*bottone singolo illustratore al passaggio del mouse*/
-.subnav-content a:hover { 
+
+
+
+* {transition:all 0.3s;-webkit-transition:all 0.3s;font-family: 'Roboto', sans-serif;}
+.header-nav {background-color: #bbdfb8; display:grid; place-items: end; max-width: 100%; /*position: relative; float:left;*/}
+
+/*box con 3 voci: home - illu - ab*/
+.header-nav ul {position:absolute;float:left;list-style:none;margin:0;padding:0;}
+
+.header-nav ul li {/*background-color: #a09090;*/ position:relative;float:left;}
+/*.header-nav ul li ul {margin-left:-4px;}*/
+.header-nav > ul {position:relative;}
+/*.header-nav > ul > li:last-child {border-right:4px solid rgb(137, 67, 63);}*/
+
+.header-nav > ul > li > .header-nav-link + ul li {
+  width: 8em; 
+  padding: 1em 1em;
+  margin-top: -25em;
   border-bottom: 6px solid #000;
-  color: #7EC489;
-  max-width: 7rem;
 }
-/*dimensione e disposizione menù a tendina con illustratori*/
-.subnav:hover .subnav-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 13px;
-  padding: 3em 1em;
+  /*border-bottom:6px solid #000;*/
+.header-nav > ul > li:hover .header-nav-link + ul > li {background-color: #e1ffd4; height: 5em; margin-top:0; text-align: center;}
+.header-nav .header-nav-link {float:left;text-decoration:none;font-weight: 500; padding: 1em;}
+/*.header-nav .header-nav-link:hover {background-color: #7EC489 !important;}*/
+
+/*3 voci nav bar - links*/
+.header-nav .header-nav-top-link {background-color: #E0E3C3; padding: 2em 3em;}
+
+/*.header-nav ul li:hover .header-nav-link {background-color:#333;}*/
+.header-nav ul li:hover .header-nav-top-link {background-color:#7EC489;}
+
+/* POSIZIONE COMPARSA menù a tendina con artisti*/
+.header-nav > ul > li > .header-nav-top-link + ul {top: 4em;}
+/*.header-nav > ul > li:hover .header-nav-sub-link {background-color:#e3d1d1;}*/
+
+/*.header-logo > .header-logo-name {float:left;color:#FFF;font-size:30px;font-weight:bold;padding:14px 0;}
+.header-logo > .header-logo-name:hover {text-decoration:none;}*/
+
+@media (max-width: 767px) {
+  .header-nav > ul > li {max-width:100%;border-right:4px solid rgb(79, 199, 255);border-bottom:2px solid rgba(224, 52, 106, 1);}
+  .header-nav > ul > li:first-child > a {font-size:18px;font-weight:400;}
+  .header-nav > ul > li:last-child {border-bottom:none;}
+  .header-nav > ul > li > .header-nav-top-link + ul {position:relative;top:0px;left:4px;}
+  .header-nav > ul > li > .header-nav-top-link + ul li {position:relative;float:left;border-left:none;width:100%;}
 }
+
+
+
+
+
 /*_______________________________________________________________________________________________________________________________________*/
 a {
   color: #000;
