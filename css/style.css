@@ -22,15 +22,11 @@ img {
 }
 /*---------------------------------------------- T R A D E M A R K ---------------------------------------------------------------------*/
 .trademark {
-  display: grid;
-  justify-content: start;
+  display: flex;
   position: absolute;
-  z-index: -1;
-}
-.marchio {
-  max-width: 6rem;
-  padding: 8em 0 0 8em;  
-}
+  z-index: 1;
+}  
+.trade {max-width: 13rem; padding: 0.5em 0 0 1em;}
 /*------------------------------------------------ N A V / B A R ------------------------------------------------------------------------*/
 header {
   position: -webkit-sticky;
@@ -41,11 +37,10 @@ header {
 .header-nav {background-color: #bbdfb8; display:grid; place-items: end; max-width: 100%; padding: 1em 2em;}
 
 /*box con 3 voci: home - illu - ab*/
-.header-nav ul {position:absolute;float:left;list-style:none;margin:0;padding:0;}
-
-.header-nav ul li {/*background-color: #a09090;*/ position:relative;float:left;}
+.header-nav ul {position: absolute;float: left;list-style: none;margin:0;padding:0;}
+.header-nav ul li {position: relative; float:left;}
 /*.header-nav ul li ul {margin-left:-4px;}*/
-.header-nav > ul {position:relative;}
+.header-nav > ul {position: relative;}
 /*.header-nav > ul > li:last-child {border-right:4px solid rgb(137, 67, 63);}*/
 
 .header-nav > ul > li > .header-nav-link + ul li {
@@ -54,45 +49,31 @@ header {
   margin-top: -13em;
   text-align: center;
 }
-
-.header-nav > ul > li:hover .header-nav-link + ul > li {background-color: #fff; height: 2em; margin-top:0; border: 1px solid #000;}
-.header-nav .header-nav-link {text-align:center; text-decoration:none;font-weight: 500;}
-/*.header-nav .header-nav-link:hover {background-color: #7EC489 !important;}*/
+.header-nav > ul > li:hover .header-nav-link + ul > li {
+  background-color: #fff; 
+  margin-top:0; 
+  border: 1px solid #000; 
+  border-radius: 2em;
+  width: 8em;
+}
+.header-nav-link:hover {color: #fff; font-weight: 400;}
+.header-nav .header-nav-link {text-decoration:none;font-weight: 450;}
 
 /*3 voci nav bar - links*/
 .header-nav .header-nav-top-link {padding: 1em 2em;}
 
 /*.header-nav ul li:hover .header-nav-link {background-color:#333;}*/
-.header-nav ul li:hover .header-nav-top-link {background-color:#7EC489; padding: 1em 2em;}
+.header-nav ul li:hover .header-nav-top-link {padding: 1em 2em;}
 
 /* POSIZIONE COMPARSA menù a tendina con artisti*/
-.header-nav > ul > li > .header-nav-top-link + ul {top: 2em;}
-/*.header-nav > ul > li:hover .header-nav-sub-link {background-color:#e3d1d1;}*/
-
-/*.header-logo > .header-logo-name {float:left;color:#FFF;font-size:30px;font-weight:bold;padding:14px 0;}
-.header-logo > .header-logo-name:hover {text-decoration:none;}*/
-
-@media (max-width: 767px) {
-  .header-nav > ul > li {max-width:100%;border-right:4px solid rgb(79, 199, 255);border-bottom:2px solid rgba(224, 52, 106, 1);}
-  .header-nav > ul > li:first-child > a {font-size:18px;font-weight:400;}
-  .header-nav > ul > li:last-child {border-bottom:none;}
-  .header-nav > ul > li > .header-nav-top-link + ul {position:relative;top:0px;left:4px;}
-  .header-nav > ul > li > .header-nav-top-link + ul li {position:relative;float:left;border-left:none;width:100%;}
-}
-
-
-
-
-
+.header-nav > ul > li > .header-nav-top-link + ul {top: 2.2em;}
 /*_______________________________________________________________________________________________________________________________________*/
 a {
   color: #000;
   text-decoration: none;
   line-height: 0;
 }
-a:hover {
-  color: #E0E3C3;
-}
+a:hover {color: #7EC489; font-weight: 700;}
 /*----------------------------------------- H E R O  /  P I C ---------------------------------------------------------------------------*/
 .heropic {
   display: grid;
@@ -103,15 +84,12 @@ a:hover {
 }
 .mainpic img {
   object-fit: none;
-  object-position: 53% 91.5%;
-  width: 67.9rem;
-  height: 34rem;
+  object-position: 53% 93.5%;
+  width: 89em;
+  height: 34em;
   margin: 0 0 5em 0;
 }
-.mainpic img:hover {
-  opacity: 0.9;
-}
-/*----------------------------------------- H E A D L I N E   ---------------------------------------------------------------------------*/
+/*----------------------------------------- H E A D L I N E -----------------------------------------------------------------------------*/
 div.headline {
   background-color: #7EC489;
   border-top: 1.5px solid #000;
@@ -156,12 +134,13 @@ h4 {
   justify-content: center;
   gap: 21px;
 }
-p.main {
+h3.main {
   background-color: #d1e3c3;
   font-family: 'Montagu Slab', serif;
+  font-size: 1.2em;
   font-weight: 500;
   margin: 0 0 1em 0;
-  width: 15em;
+  width: 13em;
   height: 1em;
 }
 .karlotta {
@@ -223,18 +202,44 @@ li.down {
 }
 /*_________________________________________________________________ 1 ___________________________________________________________________*/
 @media (max-width: 35em) { 
-.trademark {
-    display: grid;
-    justify-content: start;
+  .trademark {
+    display: flex;
     position: absolute;
     z-index: 1;
+  }  
+  .trade {max-width: 8rem; padding: 0.5em 0 0 1em;}
+/*_______________________________________________________________________________________________________________________________________*/
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
   }
-  .marchio {
-    max-width: 3rem;
-    padding: 5em 0 0 5em;  
-  }
-  /*_______________________________________________________________________________________________________________________________________*/
+  * {transition:all 0.3s;-webkit-transition:all 0.3s; font-family: 'Libre office', sans-serif;}
+  .header-nav {background-color: #bbdfb8; display:grid; place-items: end; max-width: 100%; padding: 1em 0;}
   
+  /*box con 3 voci: home - illu - ab*/
+  .header-nav ul {position: absolute; float: left; list-style: none; margin:0; padding:0; background-color:aquamarine;}
+  .header-nav ul li {position: relative; float: right; background-color: hotpink;}
+  .header-nav > ul {position: relative; background-color: red;}  
+  .header-nav > ul > li > .header-nav-link + ul li {width: 8em; padding: 1em 1em; margin-top: -13em; text-align: center;}
+  .header-nav > ul > li:hover .header-nav-link + ul > li {
+    background-color: #fff; 
+    margin-top:0; 
+    border: 1px solid #000; 
+    border-radius: 2em;
+    width: 8em;
+  }
+  .header-nav-link:hover {color: #fff; font-weight: 400;}
+  .header-nav .header-nav-link {text-decoration:none;font-weight: 450;}
+  
+  /*3 voci nav bar - links*/
+  .header-nav .header-nav-top-link {padding: 1em 2em;}
+  
+  /*.header-nav ul li:hover .header-nav-link {background-color:#333;}*/
+  .header-nav ul li:hover .header-nav-top-link {padding: 1em 2em;}
+  
+  /* POSIZIONE COMPARSA menù a tendina con artisti*/
+  .header-nav > ul > li > .header-nav-top-link + ul {top: 2.2em;}  
 /*_______________________________________________________________________________________________________________________________________*/
 .heropic {
   display: grid;
@@ -322,18 +327,18 @@ a.freccina:hover {
 }
 }
 /*_________________________________________________________________ 2 ___________________________________________________________________*/
-@media (max-width: 35em) {
-  .trademark {
+/*@media (max-width: 35em) {
+.trademark {
     border-radius: 0 0 4px 0;
   }
   .marchio {
     max-width: 4rem;
     padding: 6em 1em 1em 3em;  
   }
-}
+}*/
 /*_________________________________________________________________ 3 ___________________________________________________________________*/
-@media (min-width: 35em) {
-  .trademark {
+/*@media (min-width: 35em) {
+.trademark {
   border-radius: 0 0 4px 0;
 }
   .marchio {
@@ -342,7 +347,7 @@ a.freccina:hover {
 }
 }
 @media (min-width: 50em) {
-  .trademark {
+.trademark {
     border-radius: 0 0 4px 0;
 }
   .marchio {
@@ -351,11 +356,11 @@ a.freccina:hover {
 }
 }
 @media (min-width: 70em) {
-  .trademark {
+.trademark {
     border-radius: 0 0 4px 0;
-  }
-  .marchio {
+}
+.marchio {
     max-width: 6rem;
     padding: 6em 1em 1em 9em;  
-  }
 }
+}*/
