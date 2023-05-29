@@ -27,19 +27,19 @@ main {
 /*---------------------------------------------- T R A D E M A R K ---------------------------------------------------------------------*/
 .trademark {display: flex; position: absolute; z-index: 1;}  
 .trade {max-width: 13rem; padding: 0.5em 0 0 1em;}
-/*------------------------------------------------ N A V / B A R ------------------------------------------------------------------------*/
-header {background-color: red; position: -webkit-sticky; position: sticky; top:0;}
+/*-------------------------------------------------------- N A V  B A R -----------------------------------------------------------------*/
+header {position: -webkit-sticky; position: sticky; top:0;}
 * {transition:all 0.3s;-webkit-transition:all 0.3s; font-family: 'Libre office', sans-serif;}
 .header-nav {background-color: #bbdfb8; display:grid; place-items: end; max-width: 100%; padding: 1em 2em;}
 
-/*TITOLObox con 3 voci: home - illu - ab*/
+/*box con 3 voci: home - illu - ab*/
 .header-nav ul {position: absolute; float: left; list-style: none; margin:0; padding:0;}
 .header-nav ul li {position: relative; float: left;}
-/*BHO.header-nav ul li ul {margin-left:-4px;}*/
+/*.header-nav ul li ul {margin-left:-4px;}*/
 .header-nav > ul {position: relative;}
-/*BHO.header-nav > ul > li:last-child {border-right:4px solid rgb(137, 67, 63);}*/
+/*.header-nav > ul > li:last-child {border-right:4px solid rgb(137, 67, 63);}*/
 
-/*.header-nav > ul > li > .header-nav-link + ul li {
+.header-nav > ul > li > .header-nav-link + ul li {
   width: 8em; 
   padding: 1em 1em;
   margin-top: -13em;
@@ -53,16 +53,16 @@ header {background-color: red; position: -webkit-sticky; position: sticky; top:0
   width: 8em;
 }
 .header-nav-link:hover {color: #fff; font-weight: 400;}
-.header-nav .header-nav-link {text-decoration:none; font-weight: 450;}*/
+.header-nav .header-nav-link {text-decoration:none;font-weight: 450;}
 
-/*TITOLO3 voci nav bar - links*/
-/*.header-nav .header-nav-top-link {padding: 1em 2em;}*/
+/*3 voci nav bar - links*/
+.header-nav .header-nav-top-link {padding: 1em 2em;}
 
-/*BHO.header-nav ul li:hover .header-nav-link {background-color:#333;}*/
-/*.header-nav ul li:hover .header-nav-top-link {padding: 1em 2em;}*/
+/*.header-nav ul li:hover .header-nav-link {background-color:#333;}*/
+.header-nav ul li:hover .header-nav-top-link {padding: 1em 2em;}
 
 /* POSIZIONE COMPARSA menù a tendina con artisti*/
-/*.header-nav > ul > li > .header-nav-top-link + ul {top: 2.2em;}*/
+.header-nav > ul > li > .header-nav-top-link + ul {top: 2.2em;}
 /*_______________________________________________________________________________________________________________________________________*/
 a {color: #000; text-decoration: none; line-height: 0;}
 a:hover {color: #7EC489; font-weight: 700;}
