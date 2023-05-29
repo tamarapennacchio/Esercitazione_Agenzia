@@ -25,15 +25,11 @@ main {
 }
 /*-------------------------------------------------------- T R A D E M A R K ------------------------------------------------------------*/
 .trademark {
-  display: grid;
-  justify-content: start;
+  display: flex;
   position: absolute;
-  z-index: -1;
-}
-.marchio {
-  max-width: 6rem;
-  padding: 8em 0 0 8em;  
-}
+  z-index: 1;
+}  
+.trade {max-width: 13rem; padding: 0.5em 0 0 1em;}
 /*-------------------------------------------------------- N A V  B A R -----------------------------------------------------------------*/
 header {
   position: -webkit-sticky;

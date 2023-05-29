@@ -226,28 +226,24 @@ li.down {
   .header-nav {background-color: #bbdfb8; display:flex; justify-content: end; max-width: 100%; padding: 1em 0;}
   
   /*box con 3 voci: home - illu - ab*/
-  .header-nav ul {/*position: absolute; float: left; list-style: none;*/}
-  .header-nav ul li {/*position: relative; float: right;*/}
-  .header-nav > ul {/*position: relative; margin: 0;*/}  
-  .header-nav > ul > li > .header-nav-link + ul li {/*width: 8em; padding: 1em 1em; margin-top: -13em; text-align: center;*/}
-  .header-nav > ul > li:hover .header-nav-link + ul > li {
+.header-nav > ul > li:hover .header-nav-link + ul > li {
     background-color: #fff; 
     margin-top:0; 
     border: 1px solid #000; 
     border-radius: 2em;
     width: 8em;
   }
-  .header-nav-link:hover {color: #fff; font-weight: 400;}
-  .header-nav .header-nav-link {text-decoration: none; font-weight: 450;}
+.header-nav-link:hover {color: #fff; font-weight: 400;}
+.header-nav .header-nav-link {text-decoration: none; font-weight: 450;}
   
-  /*3 voci nav bar - links*/
-  .header-nav .header-nav-top-link {padding: 1em 1em;}
+/*3 voci nav bar - links*/
+.header-nav .header-nav-top-link {padding: 1em 1em;}
   
-  /*.header-nav ul li:hover .header-nav-link {background-color:#333;}*/
-  .header-nav ul li:hover .header-nav-top-link {padding: 1em;}
+/*.header-nav ul li:hover .header-nav-link {background-color:#333;}*/
+.header-nav ul li:hover .header-nav-top-link {padding: 1em;}
   
-  /* POSIZIONE COMPARSA menù a tendina con artisti*/
-  .header-nav > ul > li > .header-nav-top-link + ul {top: 2em;}  
+/* POSIZIONE COMPARSA menù a tendina con artisti*/
+.header-nav > ul > li > .header-nav-top-link + ul {top: 2em;}  
 /*_______________________________________________________________________________________________________________________________________*/
 .heropic {cursor: pointer;}
 .mainpic img {
