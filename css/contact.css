@@ -30,15 +30,18 @@ main {
 /*-------------------------------------------------------- N A V  B A R -----------------------------------------------------------------*/
 header {position: -webkit-sticky; position: sticky; top:0;}
 * {transition:all 0.3s;-webkit-transition:all 0.3s; font-family: 'Libre office', sans-serif;}
-.header-nav {background-color: #bbdfb8; display:grid; place-items: end; max-width: 100%; padding: 1em 2em;}
+.header-nav {
+  background-color: #bbdfb8; 
+  display: grid; 
+  place-items: end; 
+  max-width: 100%; 
+  padding: 1em 2em;}
 
 /*box con 3 voci: home - illu - ab*/
 .header-nav ul {position: absolute; float: left; list-style: none; margin:0; padding:0;}
 .header-nav ul li {position: relative; float: left;}
 /*.header-nav ul li ul {margin-left:-4px;}*/
 .header-nav > ul {position: relative;}
-/*.header-nav > ul > li:last-child {border-right:4px solid rgb(137, 67, 63);}*/
-
 .header-nav > ul > li > .header-nav-link + ul li {
   width: 8em; 
   padding: 1em 1em;
@@ -188,7 +191,7 @@ a.freccina {
   background-color: #B2C47E;
     color: #000;
     border-radius: 20px;
-    padding: 0.8em 0.5em;
+    padding: 1em 0.5em;
     text-decoration: none;
     position: fixed;
     bottom: 8px;
@@ -281,10 +284,10 @@ a.freccina {
   color: black;
   background: #B2C47E;
   border-radius: 20px;
-  padding: 0.8em 0.5em;
+  padding: 1em 0.5em;
   text-decoration: none;
   position: fixed;
-  bottom: 13px;
+  bottom: 8px;
   right: 21px;
 }
 a.freccina:hover {

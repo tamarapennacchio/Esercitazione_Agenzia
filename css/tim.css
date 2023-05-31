@@ -85,14 +85,14 @@ h2.name {
   margin-bottom: 0.46153846em;
   font-weight: 500;
   max-width: 11rem;
-  margin: 0;
+  margin:0;
 }
 p.web {
   font-family: 'Libre Franklin', sans-serif;
   margin-top: 0em;
   margin-bottom: 1.2em;
   font-weight: 500;
-  margin: 0;
+  margin:0;
 }
 /*---------------------------------------------------------- H E R O  /  P I C ----------------------------------------------------------*/
 .hero {
@@ -105,7 +105,7 @@ p.web {
   max-height: 30em;
   object-fit: cover;
   width: 100%;
-  margin: 0;
+  margin:0;
 }
 /*----------------------------------------------------- E V I D E N Z I A T O R E -------------------------------------------------------*/
 .sito:hover {
@@ -143,7 +143,7 @@ p.web {
 }
 .text {
   padding: 4em;
-  max-width: 34rem;
+  max-width: 30rem;
 }
 h5.z {
   font-family: 'Libre Franklin', sans-serif;
@@ -173,7 +173,7 @@ a.freccina {
   background-color: #E0E3C3;
     color: #000;
     border-radius: 20px;
-    padding: 0.2em 0.5em;
+    padding: 1em 0.5em;
     text-decoration: none;
     position: fixed;
     bottom: 8px;
@@ -288,7 +288,7 @@ h2.name { /*like h4*/
   margin: 0;
 }
 .text {
-  max-width: 34rem;
+  max-width: 21rem;
   margin: 0;
   padding: 0;
 }
@@ -326,10 +326,10 @@ a.freccina {
   color: black;
   background: #B2C47E;
   border-radius: 20px;
-  padding: 0.2em 0.5em;
+  padding: 1em 0.5em;
   text-decoration: none;
   position: fixed;
-  bottom: 13px;
+  bottom: 8px;
   right: 21px;
 }
 a.freccina:hover {

@@ -173,7 +173,7 @@ a.freccina {
   background-color: #E0E3C3;
     color: #000;
     border-radius: 20px;
-    padding: 0.2em 0.5em;
+    padding: 1em 0.5em;
     text-decoration: none;
     position: fixed;
     bottom: 8px;
@@ -323,10 +323,10 @@ a.freccina {
   color: black;
   background: #B2C47E;
   border-radius: 20px;
-  padding: 0.2em 0.5em;
+  padding: 1em 0.5em;
   text-decoration: none;
   position: fixed;
-  bottom: 13px;
+  bottom: 8px;
   right: 21px;
 }
 a.freccina:hover {
