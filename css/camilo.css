@@ -22,7 +22,7 @@ img {
 }
 main {
   max-width: 100%;
-  max-resolution:0;
+  margin:0;
 }
 /*-------------------------------------------------------- T R A D E M A R K ------------------------------------------------------------*/
 .trademark {display: flex; position: absolute; z-index: 1;}  
@@ -204,7 +204,7 @@ li.down {
 /*_________________________________________________________________ 1 ___________________________________________________________________*/
 @media (max-width: 35em) { 
 .trademark {display: flex; position: absolute; z-index: 1;}  
-.trade {max-width: 8rem; padding: 0.5em 0 0 1em;}
+.trade {max-width: 10rem; padding: 0.5em 0 0 1em;}
 /*_______________________________________________________________________________________________________________________________________*/  
 header {
   position: -webkit-sticky;
