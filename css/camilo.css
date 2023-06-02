@@ -75,6 +75,7 @@ a:hover {color: #7EC489; font-weight: 700;}
   z-index: 1;
   margin: 0;
   padding: 13em 0 0 75em;
+  background-color: rgb(100, 139, 238);
 }
 h2.name {
   color: #000;
@@ -86,6 +87,7 @@ h2.name {
   font-weight: 500;
   max-width: 11rem;
   margin: 0;
+  background-color:salmon;
 }
 p.web {
   font-family: 'Libre Franklin', sans-serif;
@@ -128,7 +130,7 @@ p.web {
   height: 5px;
   transition: width .7s;
   width: 0;
-  margin: 8px 0 0 0;
+  margin: 10px 0 0 0;
 }
 .sito:hover:after {
   width: 100%;
@@ -236,14 +238,16 @@ header {
 .header-nav > ul > li > .header-nav-top-link + ul {top: 2em;}
 /*_______________________________________________________________________________________________________________________________________*/  
 .autore { 
-  max-width: 10rem;
+  background-color: paleturquoise;
+  max-width: 8rem;
   display: grid;
   place-items: start;
   position: absolute;
   z-index: 1;
-  margin: 8em 0 0 0;
+  margin: 8em 0 0 14em;
 }
 h2.name { /*like h4*/
+  background-color:violet;
   color: #000;
   font-family: 'Montagu Slab', serif;
   font-size: 1em;
@@ -338,7 +342,7 @@ a.freccina:hover {
 }
 }
 /*_________________________________________________________________ 2 ___________________________________________________________________*/
-@media (max-width: 35em) {
+@media (max-width: 50em) {
 .trademark {
   border-radius: 0 0 4px 0;
 }
@@ -364,71 +368,5 @@ h2.name { /*like h4*/
   font-weight: 500;
   max-width: 5rem;
   margin: 0;
-}
-}
-/*_________________________________________________________________ 3 ___________________________________________________________________*/
-@media (min-width: 35em) {
-.trademark {
-  border-radius: 0 0 4px 0;
-}
-.marchio {
-  max-width: 3rem;
-  padding: 6em 1em 1em 3em;  
-}
-autore {
-  width: 25rem;
-  display: grid;
-  place-items: center end;
-  position: absolute;
-  z-index: 1;
-  margin: 8em 0 0 0;
-}
-h2.name {
-  color: #000;
-  font-family: 'Montagu Slab', serif;
-  font-size: 2.6em;
-  line-height: 1.38461538em;
-  margin-top: 0.46153846em;
-  margin-bottom: 0.46153846em;
-  font-weight: 500;
-  max-width: 5rem;
-  margin: 0;
-}
-}
-/*_________________________________________________________________ 4 ___________________________________________________________________*/
-@media (min-width: 50em) {
-.marchio {
-  max-width: 4.5rem;
-  padding: 6em 1em 1em 6em;  
-}
-.autore {
-  max-width: 25rem;
-  display: grid;
-  place-items: center end;
-  position: absolute;
-  z-index: 1;
-  margin: 15em 0 0 65rem;
-  padding: 0;
-}
-h2.name {
-  color: #000;
-  font-family: 'Montagu Slab', serif;
-  font-size: 2.6em;
-  line-height: 1.38461538em;
-  margin-top: 0.46153846em;
-  margin-bottom: 0.46153846em;
-  font-weight: 500;
-  max-width: 5rem;
-  margin: 0;
-}
-}
-/*_________________________________________________________________ 5 ___________________________________________________________________*/
-@media (min-width: 70em) {
-.trademark {
-  border-radius: 0 0 4px 0;
-}
-.marchio {
-  max-width: 6rem;
-  padding: 6em 1em 1em 9em;  
 }
 }

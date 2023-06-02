@@ -29,16 +29,21 @@ main {
 .trade {max-width: 13rem; padding: 0.5em 0 0 1em;}
 /*-------------------------------------------------------- N A V  B A R -----------------------------------------------------------------*/
 header {position: -webkit-sticky; position: sticky; top:0;}
-* {transition:all 0.3s;-webkit-transition:all 0.3s; font-family: 'Libre office', sans-serif;}
-.header-nav {background-color: #bbdfb8; display:grid; place-items: end; max-width: 100%; padding: 1em 2em;}
-
+/** {
+  transition: all 0.3s;
+  -webkit-transition:all 0.3s; 
+  font-family: 'Libre office', sans-serif;
+}*/
+.header-nav {
+  background-color: #bbdfb8; 
+  display: grid; 
+  place-items: end; 
+  max-width: 100%; 
+  padding: 1em 2em;}
 /*box con 3 voci: home - illu - ab*/
 .header-nav ul {position: absolute; float: left; list-style: none; margin:0; padding:0;}
-.header-nav ul li {position: relative; float:left;}
-/*.header-nav ul li ul {margin-left:-4px;}*/
+.header-nav ul li {background-color: yellow; position: relative; float: left;}
 .header-nav > ul {position: relative;}
-/*.header-nav > ul > li:last-child {border-right:4px solid rgb(137, 67, 63);}*/
-
 .header-nav > ul > li > .header-nav-link + ul li {
   width: 8em; 
   padding: 1em 1em;
@@ -53,7 +58,7 @@ header {position: -webkit-sticky; position: sticky; top:0;}
   width: 8em;
 }
 .header-nav-link:hover {color: #fff; font-weight: 400;}
-.header-nav .header-nav-link {text-decoration:none;font-weight: 450;}
+.header-nav .header-nav-link {text-decoration:none; font-weight: 450;}
 
 /*3 voci nav bar - links*/
 .header-nav .header-nav-top-link {padding: 1em 2em;}
@@ -68,6 +73,7 @@ a {color: #000; text-decoration: none; line-height: 0;}
 a:hover {color: #7EC489; font-weight: 700;}
 /*------------------------------------------------------- H E A D L I N E ---------------------------------------------------------------*/
 .autore {
+  background-color: rgb(117, 156, 240);
   max-width: 100%;
   display: grid;
   place-items: end;
@@ -77,6 +83,7 @@ a:hover {color: #7EC489; font-weight: 700;}
   padding: 13em 0 0 75em;
 }
 h2.name {
+  background-color: salmon;
   color: #000;
   font-family: 'Montagu Slab', serif;
   font-size: 2.6em;
@@ -97,13 +104,15 @@ p.web {
 /*---------------------------------------------------------- H E R O  /  P I C ----------------------------------------------------------*/
 .hero {
   max-width: 100%;
+  position: relative;
+  z-index: -1;
 }
 .herobox img {
   opacity: 40%;
   max-height: 30em;
   object-fit: cover;
   width: 100%;
-  margin:0;
+  margin: 0;
 }
 /*----------------------------------------------------- E V I D E N Z I A T O R E -------------------------------------------------------*/
 .sito:hover {
@@ -125,8 +134,8 @@ p.web {
   display: block;
   height: 5px;
   transition: width .7s;
-  width:0;
-  margin: 8px 0 0 0;
+  width: 0;
+  margin: 10px 0 0 0;
 }
 .sito:hover:after {
   width: 100%;
@@ -231,14 +240,16 @@ header {
 .header-nav > ul > li > .header-nav-top-link + ul {top: 2em;} 
 /*_______________________________________________________________________________________________________________________________________*/  
 .autore { 
-  max-width: 10rem;
+  background-color: paleturquoise;
+  max-width: 7rem;
   display: grid;
   place-items: start;
   position: absolute;
   z-index: 1;
-  margin: 8em 0 0 0;
+  margin: 8em 0 0 14em;
 }
 h2.name { /*like h4*/
+  background-color:violet;
   color: #000;
   font-family: 'Montagu Slab', serif;
   font-size: 1em;
@@ -333,8 +344,15 @@ a.freccina:hover {
 }
 }
 /*_________________________________________________________________ 2 ___________________________________________________________________*/
-@media (max-width: 35em) {
-.autore {
+@media (max-width: 50em) {
+.trademark {
+  border-radius: 0 0 4px 0;
+}
+.marchio {
+  max-width: 2rem;
+  padding: 6em 1em 1em 3em;  
+}
+  .autore {
   width: 100%;
   display: grid;
   place-items: center end;
@@ -349,51 +367,6 @@ h2.name { /*like h4*/
   line-height: 1.2em;
   margin-top: 1.2em;
   margin-bottom: 0em;
-  font-weight: 500;
-  max-width: 5rem;
-  margin: 0;
-}
-}
-/*_________________________________________________________________ 3 ___________________________________________________________________*/
-@media (min-width: 35em) {
-.autore {
-  width: 25rem;
-  display: grid;
-  place-items: center end;
-  position: absolute;
-  z-index: 1;
-  margin: 8em 0 0 0;
-}
-h2.name {
-  color: #000;
-  font-family: 'Montagu Slab', serif;
-  font-size: 2.6em;
-  line-height: 1.38461538em;
-  margin-top: 0.46153846em;
-  margin-bottom: 0.46153846em;
-  font-weight: 500;
-  max-width: 5rem;
-  margin: 0;
-}
-}
-/*_________________________________________________________________ 4 ___________________________________________________________________*/
-@media (min-width: 50em) {
-.autore {
-  max-width: 25rem;
-  display: grid;
-  place-items: center end;
-  position: absolute;
-  z-index: 1;
-  margin: 15em 0 0 65rem;
-  padding: 0;
-}
-h2.name {
-  color: #000;
-  font-family: 'Montagu Slab', serif;
-  font-size: 2.6em;
-  line-height: 1.38461538em;
-  margin-top: 0.46153846em;
-  margin-bottom: 0.46153846em;
   font-weight: 500;
   max-width: 5rem;
   margin: 0;
