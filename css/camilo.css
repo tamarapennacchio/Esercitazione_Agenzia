@@ -72,10 +72,9 @@ a:hover {color: #7EC489; font-weight: 700;}
   display: grid;
   place-items: end;
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   margin: 0;
   padding: 13em 0 0 75em;
-  background-color: rgb(100, 139, 238);
 }
 h2.name {
   color: #000;
@@ -87,7 +86,6 @@ h2.name {
   font-weight: 500;
   max-width: 11rem;
   margin: 0;
-  background-color:salmon;
 }
 p.web {
   font-family: 'Libre Franklin', sans-serif;
@@ -103,7 +101,7 @@ p.web {
   z-index: -1;
 }
 .herobox img {
-  opacity: 40%;
+  opacity: 25%;
   max-height: 30em;
   object-fit: cover;
   width: 100%;

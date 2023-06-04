@@ -68,17 +68,15 @@ a {color: #000; text-decoration: none; line-height: 0;}
 a:hover {color: #7EC489; font-weight: 700;}
 /*------------------------------------------------------- H E A D L I N E ---------------------------------------------------------------*/
 .autore {
-  background-color: rgb(117, 156, 240);
   max-width: 100%;
   display: grid;
   place-items: end;
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   margin: 0;
   padding: 13em 0 0 75em;
 }
 h2.name {
-  background-color: salmon;
   color: #000;
   font-family: 'Montagu Slab', serif;
   font-size: 2.6em;
@@ -103,7 +101,7 @@ p.web {
   z-index: -1;
 }
 .herobox img {
-  opacity: 40%;
+  opacity: 25%;
   max-height: 30em;
   object-fit: cover;
   width: 100%;
@@ -214,8 +212,8 @@ header {
   top:0;
   z-index: 1;
 }
-* {transition:all 0.3s;-webkit-transition:all 0.3s; font-family: 'Libre office', sans-serif;}
-.header-nav {background-color: #bbdfb8; display:flex; justify-content: end; max-width: 100%; padding: 1em 0;}
+/** {transition:all 0.3s;-webkit-transition:all 0.3s; font-family: 'Libre office', sans-serif;}
+.header-nav {background-color: #bbdfb8; display:flex; justify-content: end; max-width: 100%; padding: 1em 0;}*/
 
 /*box con 3 voci: home - illu - ab*/
 .header-nav > ul > li:hover .header-nav-link + ul > li {
@@ -224,6 +222,7 @@ header {
   border: 1px solid #000; 
   border-radius: 2em;
   width: 8em;
+  position: relative;
 }
 .header-nav-link:hover {color: #fff; font-weight: 400;}
 .header-nav .header-nav-link {text-decoration: none; font-weight: 450;}
@@ -231,23 +230,20 @@ header {
 /*3 voci nav bar - links*/
 .header-nav .header-nav-top-link {padding: 1em 1em;}
 
-/*.header-nav ul li:hover .header-nav-link {background-color:#333;}*/
 .header-nav ul li:hover .header-nav-top-link {padding: 1em;}
 
 /* POSIZIONE COMPARSA menù a tendina con artisti*/
 .header-nav > ul > li > .header-nav-top-link + ul {top: 2em;} 
 /*-------------------------------------------------------------*/
 .autore { 
-  background-color: paleturquoise;
   max-width: 6rem;
   display: grid;
   place-items: start;
   position: absolute;
   z-index: 1;
-  margin: 8em 0 0 14em;
+  margin: 8em 0 0 8em;
 }
 h2.name { /*like h4*/
-  background-color:violet;
   color: #000;
   font-family: 'Montagu Slab', serif;
   font-size: 1em;
@@ -278,7 +274,7 @@ h2.name { /*like h4*/
   display: block;
   height: 5px;
   transition: width .7s;
-  width: 0;
+  width:0;
   margin: 8px 0 0 0;
 }
 .sito:hover:after {

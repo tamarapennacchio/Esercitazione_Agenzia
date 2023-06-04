@@ -219,7 +219,12 @@ li.down {
     z-index: 1;
   }
   /** {transition:all 0.3s;-webkit-transition:all 0.3s; font-family: 'Libre office', sans-serif;}*/
-  .header-nav {background-color: #bbdfb8; display:flex; justify-content: end; max-width: 100%; padding: 1em 0;}
+  .header-nav {
+    background-color: #bbdfb8; 
+    display: grid; 
+    place-items: end; 
+    max-width: 100%;
+  padding: 1em ;}
   
   /*box con 3 voci: home - illu - ab*/
   .header-nav > ul > li:hover .header-nav-link + ul > li {
@@ -231,11 +236,8 @@ li.down {
   }
   .header-nav-link:hover {color: #fff; font-weight: 400;}
   .header-nav .header-nav-link {text-decoration: none; font-weight: 450;}
-  
-  /*3 voci nav bar - links*/
-  .header-nav .header-nav-top-link {padding: 1em 1em;}
-  
-  .header-nav ul li:hover .header-nav-top-link {padding: 1em;}
+    
+  .header-nav ul li .header-nav-top-link {padding: 2em;}
   
   /* POSIZIONE COMPARSA menù a tendina con artisti*/
   .header-nav > ul > li > .header-nav-top-link + ul {top: 2em;} 

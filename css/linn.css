@@ -69,9 +69,8 @@ a:hover {color: #7EC489; font-weight: 700;}
 .autore {
   max-width: 100%;
   display: grid;
-  place-items: end;
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   margin: 0;
   padding: 13em 0 0 75em;
 }
@@ -100,7 +99,7 @@ p.web {
   z-index: -1;
 }
 .herobox img {
-  opacity: 40%;
+  opacity: 30%;
   max-height: 30em;
   object-fit: cover;
   width: 100%;
@@ -235,16 +234,14 @@ header {
 .header-nav > ul > li > .header-nav-top-link + ul {top: 2em;} 
 /*_______________________________________________________________________________________________________________________________________*/  
 .autore { 
-  background-color: paleturquoise;
   max-width: 5rem;
   display: grid;
   place-items: start;
   position: absolute;
   z-index: 1;
-  margin: 8em 0 0 14em;
+  margin: 8em 0 0 8em;
 }
 h2.name { /*like h4*/
-  background-color:violet;
   color: #000;
   font-family: 'Montagu Slab', serif;
   font-size: 1em;
