@@ -39,14 +39,14 @@ header {position: -webkit-sticky; position: sticky; top:0;}
   display: grid; 
   place-items: end; 
   max-width: 100%; 
-  padding: 1em 2em;}
+  padding: 1em 7em;}
 /*box con 3 voci: home - illu - ab*/
 .header-nav ul {position: absolute; float: left; list-style: none; margin:0; padding:0;}
-.header-nav ul li {background-color: firebrick; position: relative; float: left;}
+.header-nav ul li {position: relative; float: left;}
 .header-nav > ul {position: relative;}
 .header-nav > ul > li > .header-nav-link + ul li {
   width: 8em; 
-  padding: 1em 1em;
+  padding: 1em 2em;
   margin-top: -13em;
   text-align: center;
 }
@@ -61,15 +61,15 @@ header {position: -webkit-sticky; position: sticky; top:0;}
 .header-nav .header-nav-link {text-decoration:none; font-weight: 450;}
 
 /*3 voci nav bar - links*/
-.header-nav .header-nav-top-link {padding: 1em 2em;}
+.header-nav {padding: 1em 4em 1em 0;}
 
-.header-nav ul li:hover .header-nav-top-link {padding: 1em 2em;}
-
+.header-nav ul li .header-nav-top-link {padding: 1em 4em;}
 /* POSIZIONE COMPARSA menù a tendina con artisti*/
 .header-nav > ul > li > .header-nav-top-link + ul {top: 2.2em;}
 /*_______________________________________________________________________________________________________________________________________*/
 a {color: #000; text-decoration: none; line-height: 0;}
-a:hover {color: #7EC489; font-weight: 700;}
+a:hover {color: #fff;}
+.due:hover {color: #7EC489; font-weight: 600;}
 /*----------------------------------------- H E R O  /  P I C ---------------------------------------------------------------------------*/
 .heropic {
   display: grid;
